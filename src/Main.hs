@@ -20,13 +20,14 @@ main = hakyll $ do
     match "posts/*" $ do
         route   $ setExtension ""
         compile $ pageCompiler
+            >>> renderTagsField "prettytags" (fromCapture "tags/*")
             >>> applyTemplateCompiler "templates/post.html"
             >>> applyTemplateCompiler "templates/default.html"
             >>> relativizeUrlsCompiler
 
     -- Render posts list
-    match "all-posts" $ route idRoute
-    create "all-posts" $ constA mempty
+    match "archive" $ route idRoute
+    create "archive" $ constA mempty
         >>> arr (setField "title" "All posts")
         >>> requireAllA "posts/*" (id *** arr dateOrdered >>> addPostList)
         >>> renderTagsField "prettytags" (fromCapture "tags/*")
@@ -67,7 +68,7 @@ main = hakyll $ do
 
   where
     renderTagCloud' :: Compiler (Tags String) String
-    renderTagCloud' = renderTagCloud tagIdentifier 100 300
+    renderTagCloud' = renderTagCloud tagIdentifier 100 200
 
     tagIdentifier :: String -> Identifier (Page String)
     tagIdentifier = fromCapture "tags/*"
