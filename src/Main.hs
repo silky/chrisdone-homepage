@@ -11,6 +11,16 @@ import Prelude hiding (id,(.))
 
 main :: IO ()
 main = hakyll $ do
+    -- Images
+    match "images/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    -- Comics
+    match "images/comics/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- Compress CSS
     match "css/*" $ do
         route   idRoute
