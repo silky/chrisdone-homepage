@@ -18,7 +18,7 @@ main = hakyll $ do
 
     -- Render posts
     match "posts/*" $ do
-        route   $ setExtension ".html"
+        route   $ setExtension ""
         compile $ pageCompiler
             >>> applyTemplateCompiler "templates/post.html"
             >>> applyTemplateCompiler "templates/default.html"
