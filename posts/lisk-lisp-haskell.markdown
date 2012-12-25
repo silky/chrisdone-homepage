@@ -1,6 +1,7 @@
 ---
 date: 2010-11-25
 title: Lisk - Lisp and Haskell
+description: Lisk - Lisp and Haskell
 author: Chris Done
 tags: haskell, hakyll, shime
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2011-10-31
 title: Common Lisp/Haskell syntactic comparison
+description: Common Lisp/Haskell syntactic comparison
 author: Chris Done
 tags: haskell, common lisp
 ---

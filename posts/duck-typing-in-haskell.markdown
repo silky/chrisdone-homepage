@@ -1,6 +1,7 @@
 ---
 date: 2010-11-22
 title: Duck typing in Haskell
+description: Duck typing in Haskell
 author: Chris Done
 tags: haskell
 ---

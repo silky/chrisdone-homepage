@@ -1,6 +1,7 @@
 ---
 date: 2012-09-14
 title: Rock 'n' Roll outing
+description: Rock 'n' Roll outing
 author: Chris Done
 tags: italian, outings
 ---

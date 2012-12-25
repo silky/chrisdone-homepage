@@ -1,6 +1,7 @@
 ---
 date: 2010-04-04
 title: A new blog and Hakyll
+description: A new blog and Hakyll
 author: Chris Done
 tags: blog, haskell, hakyll
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2012-06-10
 title: Some poems
+description: Some poems
 author: Chris Done
 tags: poetry
 ---

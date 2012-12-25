@@ -1,6 +1,7 @@
 ---
 date: 2011-12-29
 title: darcs get
+description: darcs get
 author: Chris Done
 tags: comics, haskell, darcs
 ---

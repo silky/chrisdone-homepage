@@ -1,6 +1,7 @@
 ---
 date: 2011-09-05
 title: Simple JavaScript unifier
+description: Simple JavaScript unifier
 author: Chris Done
 tags: javascript, logic programming, types, unification
 ---

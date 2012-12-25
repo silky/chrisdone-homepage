@@ -1,6 +1,7 @@
 ---
 date: 2011-12-26
 title: Ji, a little library for controlling a web browser from Haskell
+description: Ji, a little library for controlling a web browser from Haskell
 author: Chris Done
 tags: haskell, web, javascript
 ---

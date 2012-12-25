@@ -1,6 +1,7 @@
 ---
 date: 2012-01-22
 title: Upgrading GHC
+description: Upgrading GHC
 author: Chris Done
 tags: haskell, ghc
 ---

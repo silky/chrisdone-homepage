@@ -1,6 +1,7 @@
 ---
 date: 2012-01-06
 title: Monads are burritos?
+description: Monads are burritos?
 author: Chris Done
 tags: haskell, monads, comics
 ---

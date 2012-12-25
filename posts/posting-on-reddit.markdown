@@ -1,6 +1,7 @@
 ---
 date: 2012-01-06
 title: Posting on Reddit
+description: Posting on Reddit
 author: Chris Done
 tags: comics, reddit
 ---

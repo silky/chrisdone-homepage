@@ -1,6 +1,7 @@
 ---
 date: 2011-12-23
 title: Online “piracy”, downloading and Louis CK
+description: Online “piracy”, downloading and Louis CK
 author: Chris Done
 tags: music, piracy, comedy, business
 ---

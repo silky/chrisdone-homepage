@@ -1,6 +1,7 @@
 ---
 date: 2012-01-08
 title: The Others, scary movie
+description: The Others, scary movie
 author: Chris Done
 tags: movies, horror
 ---

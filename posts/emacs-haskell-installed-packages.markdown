@@ -1,6 +1,7 @@
 ---
 date: 2010-08-07
 title: Getting all installed Haskell packages/modules from Emacs
+description: Getting all installed Haskell packages/modules from Emacs
 author: Chris Done
 tags: haskell, emacs, elisp
 ---

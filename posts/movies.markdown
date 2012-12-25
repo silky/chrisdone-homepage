@@ -1,6 +1,7 @@
 ---
 date: 2012-09-15
 title: Movies at Let's Movie
+description: Movies at Let's Movie
 author: Chris Done
 tags: movies
 ---

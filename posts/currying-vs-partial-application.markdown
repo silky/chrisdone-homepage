@@ -1,6 +1,7 @@
 ---
 date: 2012-01-31
 title: Currying vs partial application
+description: Currying vs partial application
 author: Chris Done
 tags: javascript
 ---

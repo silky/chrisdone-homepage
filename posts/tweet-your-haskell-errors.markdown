@@ -1,6 +1,7 @@
 ---
 date: 2010-04-04
 title: Tweet your Haskell type errors from Emacs
+description: Tweet your Haskell type errors from Emacs
 author: Chris Done
 tags: twitter, haskell, emacs
 ---

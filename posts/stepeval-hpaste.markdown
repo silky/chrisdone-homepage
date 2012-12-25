@@ -1,6 +1,7 @@
 ---
 date: 2011-07-02
 title: Step-wise evaluation of simple Haskell code to hpaste (via Stepeval)
+description: Step-wise evaluation of simple Haskell code to hpaste (via Stepeval)
 author: Chris Done
 tags: hpaste, haskell, stepeval, amelie
 ---

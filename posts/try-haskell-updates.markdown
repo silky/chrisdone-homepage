@@ -1,6 +1,7 @@
 ---
 date: 2010-06-13
 title: Try Haskell Updates
+description: Try Haskell Updates
 author: Chris Done
 tags: haskell, tryhaskell
 ---

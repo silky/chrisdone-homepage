@@ -1,6 +1,7 @@
 ---
 date: 2011-06-25
 title: Haskell site design
+description: Haskell site design
 author: Chris Done
 tags: haskell, design
 ---

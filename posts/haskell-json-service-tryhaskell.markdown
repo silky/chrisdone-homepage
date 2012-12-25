@@ -1,6 +1,7 @@
 ---
 date: 2010-04-05
 title: A Haskell JSON service and updated Try Haskell!
+description: A Haskell JSON service and updated Try Haskell!
 author: Chris Done
 tags: blog, haskell, tryhaskell, ajax
 ---

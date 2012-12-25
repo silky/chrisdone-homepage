@@ -1,6 +1,7 @@
 ---
 date: 2010-07-04
 title: The Haskell module landscape
+description: The Haskell module landscape
 author: Chris Done
 tags: haskell, hackage
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2011-12-05
 title: A map generic upon the value thanks to typeable
+description: A map generic upon the value thanks to typeable
 author: Chris Done
 tags: haskell
 ---

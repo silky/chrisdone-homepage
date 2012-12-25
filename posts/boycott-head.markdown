@@ -1,6 +1,7 @@
 ---
 date: 2011-10-17
 title: Deprecate Prelude.head and partial functions
+description: Deprecate Prelude.head and partial functions
 author: Chris Done
 tags: haskell
 ---

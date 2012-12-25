@@ -1,6 +1,7 @@
 ---
 date: 2011-08-21
 title: Haskell-emacs
+description: Haskell-emacs
 author: Chris Done
 tags: haskell, emacs
 ---

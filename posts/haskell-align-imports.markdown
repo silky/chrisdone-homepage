@@ -1,6 +1,7 @@
 ---
 date: 2010-07-31
 title: Haskell align imports
+description: Haskell align imports
 author: Chris Done
 tags: haskell, emacs
 ---

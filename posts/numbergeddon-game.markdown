@@ -1,6 +1,7 @@
 ---
 date: 2011-03-20
 title: Numbergeddon game
+description: Numbergeddon game
 author: Chris Done
 tags: javascript, canvas, games
 ---

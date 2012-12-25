@@ -1,6 +1,7 @@
 ---
 date: 2010-10-14
 title: Shime - Superior Haskell Interaction Mode for Emacs
+description: Shime - Superior Haskell Interaction Mode for Emacs
 author: Chris Done
 tags: haskell, hakyll, shime
 ---

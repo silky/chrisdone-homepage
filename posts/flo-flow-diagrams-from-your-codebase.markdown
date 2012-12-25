@@ -1,6 +1,7 @@
 ---
 date: 2011-08-07
 title: Flo: Generate flow diagrams from your codebase using annotations
+description: Flo: Generate flow diagrams from your codebase using annotations
 author: Chris Done
 tags: haskell, flo
 ---

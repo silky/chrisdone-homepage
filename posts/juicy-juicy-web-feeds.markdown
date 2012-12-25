@@ -1,6 +1,7 @@
 ---
 date: 2010-09-26
 title: Juicy juicy web feeds!
+description: Juicy juicy web feeds!
 author: Chris Done
 tags: blog, haskell, juicy
 ---

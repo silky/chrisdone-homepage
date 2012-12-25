@@ -1,6 +1,7 @@
 ---
 date: 2012-01-19
 title: Comments on my blog
+description: Comments on my blog
 author: Chris Done
 tags: blog
 ---

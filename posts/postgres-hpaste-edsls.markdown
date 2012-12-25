@@ -1,6 +1,7 @@
 ---
 date: 2011-06-05
 title: PostgreSQL, hpaste, and EDSLs
+description: PostgreSQL, hpaste, and EDSLs
 author: Chris Done
 tags: blog, haskell, hakyll
 ---

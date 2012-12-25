@@ -1,6 +1,7 @@
 ---
 date: 2011-11-06
 title: HaskellDB: A long tutorial
+description: HaskellDB: A long tutorial
 author: Chris Done
 tags: haskell, haskelldb
 ---

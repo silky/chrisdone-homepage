@@ -1,6 +1,7 @@
 ---
 date: 2012-01-08
 title: Moogle (movie reviews) and web frameworks
+description: Moogle (movie reviews) and web frameworks
 author: Chris Done
 tags: haskell, movies, moogle, happstack, yesod, snap
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2010-04-09
 title: A bit of cabal-install hacking
+description: A bit of cabal-install hacking
 author: Chris Done
 tags: haskell, cabal-install, cabal
 ---

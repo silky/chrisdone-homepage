@@ -1,6 +1,7 @@
 ---
 date: 2011-09-05
 title: Policy classes in Haskell
+description: Policy classes in Haskell
 author: Chris Done
 tags: haskell, cpp
 ---

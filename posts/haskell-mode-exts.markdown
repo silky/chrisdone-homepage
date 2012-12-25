@@ -1,6 +1,7 @@
 ---
 date: 2010-08-11
 title: Haskell mode Emacs extensions
+description: Haskell mode Emacs extensions
 author: Chris Done
 tags: haskell, emacs, yi
 ---

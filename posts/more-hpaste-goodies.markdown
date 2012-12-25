@@ -1,6 +1,7 @@
 ---
 date: 2010-09-25
 title: More hpaste goodies
+description: More hpaste goodies
 author: Chris Done
 tags: blog, haskell, hpaste
 ---

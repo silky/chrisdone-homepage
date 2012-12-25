@@ -1,6 +1,7 @@
 ---
 date: 2012-09-15
 title: Sky dive
+description: Sky dive
 author: Chris Done
 tags: life
 ---

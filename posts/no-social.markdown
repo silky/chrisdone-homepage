@@ -1,6 +1,7 @@
 ---
 date: 2012-09-15
 title: No Reddit, no Twitter, no Google+
+description: No Reddit, no Twitter, no Google+
 author: Chris Done
 tags: reddit, twitter, google+, social network
 ---

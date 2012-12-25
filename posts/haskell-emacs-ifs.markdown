@@ -1,6 +1,7 @@
 ---
 date: 2012-02-16
 title: If expressions in Haskell-Emacs
+description: If expressions in Haskell-Emacs
 author: Chris Done
 tags:  haskell, emacs
 ---

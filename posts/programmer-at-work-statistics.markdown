@@ -1,6 +1,7 @@
 ---
 date: 2011-12-02
 title: Programmer at work: statistics from a two year project (gitstats)
+description: Programmer at work: statistics from a two year project (gitstats)
 author: Chris Done
 tags: haskell, programming, git
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2012-01-06
 title: Compiling to JavaScript with UHC
+description: Compiling to JavaScript with UHC
 author: Chris Done
 tags: haskell, javascript, uhc
 ---

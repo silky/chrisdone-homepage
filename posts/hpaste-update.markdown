@@ -1,6 +1,7 @@
 ---
 date: 2010-09-15
 title: Amelie: hpaste.org gets an update
+description: Amelie: hpaste.org gets an update
 author: Chris Done
 tags: blog, haskell, hpaste
 ---

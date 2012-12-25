@@ -1,6 +1,7 @@
 ---
 date: 2012-06-09
 title: Deoderant
+description: Deoderant
 author: Chris Done
 tags: comics
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2010-10-01
 title: Little Codepad library
+description: Little Codepad library
 author: Chris Done
 tags: codepad, haskell, hackage
 ---

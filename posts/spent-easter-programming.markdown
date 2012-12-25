@@ -1,6 +1,7 @@
 ---
 date: 2012-04-09
 title: How I spent Easter weekend
+description: How I spent Easter weekend
 author: Chris Done
 tags: haskell, vacation, programming
 ---

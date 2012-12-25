@@ -1,6 +1,7 @@
 ---
 date: 2011-04-10
 title: ‘amb’ operator and the list monad
+description: ‘amb’ operator and the list monad
 author: Chris Done
 tags: haskell, designs
 ---

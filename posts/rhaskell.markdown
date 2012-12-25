@@ -1,6 +1,7 @@
 ---
 date: 2011-11-28
 title: /r/haskell
+description: /r/haskell
 author: Chris Done
 tags: haskell, reddit
 ---

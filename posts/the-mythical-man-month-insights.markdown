@@ -1,6 +1,7 @@
 ---
 date: 2011-06-26
 title: Some insights from The Mythical Man Month starting from Chapter 11
+description: Some insights from The Mythical Man Month starting from Chapter 11
 author: Chris Done
 tags: programming, books
 ---

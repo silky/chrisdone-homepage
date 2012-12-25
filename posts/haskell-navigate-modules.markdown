@@ -1,6 +1,7 @@
 ---
 date: 2010-08-06
 title: Navigating to/from Haskell import lists in Emacs
+description: Navigating to/from Haskell import lists in Emacs
 author: Chris Done
 tags: haskell, emacs, elisp
 ---

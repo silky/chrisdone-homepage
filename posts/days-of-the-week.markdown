@@ -1,6 +1,7 @@
 ---
 date: 2011-11-08
 title: Days of the Week
+description: Days of the Week
 author: Chris Done
 tags: art, synesthesia
 ---

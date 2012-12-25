@@ -1,6 +1,7 @@
 ---
 date: 2012-02-07
 title: Towards a nicer shell?
+description: Towards a nicer shell?
 author: Chris Done
 tags: ideas, haskell, shells
 ---

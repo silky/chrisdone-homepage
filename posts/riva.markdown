@@ -1,6 +1,7 @@
 ---
 date: 2012-09-15
 title: Riva del Garda
+description: Riva del Garda
 author: Chris Done
 tags: life, lakes, italy
 ---

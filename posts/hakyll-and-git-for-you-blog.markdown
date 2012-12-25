@@ -1,6 +1,7 @@
 ---
 date: 2010-04-04
 title: Write your blog with Hakyll and Git
+description: Write your blog with Hakyll and Git
 author: Chris Done
 tags: haskell, hakyll, git, blog
 ---

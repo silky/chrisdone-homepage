@@ -1,6 +1,7 @@
 ---
 date: 2012-08-25
 title: Making HaskellDB slightly more type-safe
+description: Making HaskellDB slightly more type-safe
 author: Chris Done
 tags: haskell, haskelldb
 ---

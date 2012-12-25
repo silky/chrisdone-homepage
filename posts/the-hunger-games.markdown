@@ -1,6 +1,7 @@
 ---
 date: 2012-05-06
 title: The Hunger Games (and Battle Royale)
+description: The Hunger Games (and Battle Royale)
 author: Chris Done
 tags: movies, film, review
 ---

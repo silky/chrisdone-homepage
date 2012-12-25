@@ -1,6 +1,7 @@
 ---
 date: 2012-11-11
 title: Lockhart's Lament
+description: Lockhart's Lament
 author: Chris Done
 tags: maths, education
 ---

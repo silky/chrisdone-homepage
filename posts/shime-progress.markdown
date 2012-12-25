@@ -1,6 +1,7 @@
 ---
 date: 2010-11-25
 title: Shime progress and multiple sessions
+description: Shime progress and multiple sessions
 author: Chris Done
 tags: haskell, emacs, shime
 ---

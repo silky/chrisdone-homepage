@@ -1,6 +1,7 @@
 ---
 date: 2012-12-25
 title: Updated my blog's Hakyll
+description: Updated my blog's Hakyll
 author: Chris Done
 tags: hakyll, blog, haskell
 ---

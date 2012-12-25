@@ -1,6 +1,7 @@
 ---
 date: 2012-03-11
 title: Thoughts on an interview with RMS
+description: Thoughts on an interview with RMS
 author: Chris Done
 tags: rms, fsf, podcast
 ---

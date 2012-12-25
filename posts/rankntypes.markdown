@@ -1,6 +1,7 @@
 ---
 date: 2011-10-16
 title: Rank-N types, a simple DB example
+description: Rank-N types, a simple DB example
 author: Chris Done
 tags: haskell, types
 ---

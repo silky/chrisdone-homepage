@@ -1,6 +1,7 @@
 ---
 date: 2011-08-20
 title: Experimenting with GHCJS, the Haskell→JavaScript compiler
+description: Experimenting with GHCJS, the Haskell→JavaScript compiler
 author: Chris Done
 tags: haskell, javascript, web
 ---

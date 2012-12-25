@@ -1,6 +1,7 @@
 ---
 date: 2011-01-30
 title: Hulk: A Haskell IRC server
+description: Hulk: A Haskell IRC server
 author: Chris Done
 tags: haskell, hulk, irc
 ---

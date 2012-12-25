@@ -1,6 +1,7 @@
 ---
 date: 2010-04-11
 title: Yay! hpaste bot is back
+description: Yay! hpaste bot is back
 author: Chris Done
 tags: haskell, hpaste
 ---

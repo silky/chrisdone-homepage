@@ -1,6 +1,7 @@
 ---
 date: 2012-06-11
 title: Last.fm / scrobbling
+description: Last.fm / scrobbling
 author: Chris Done
 tags: last.fm, music, scrobbling, haskell
 ---

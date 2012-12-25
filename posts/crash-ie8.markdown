@@ -1,6 +1,7 @@
 ---
 date: 2010-09-30
 title: Crashing IE8 with two lines of code
+description: Crashing IE8 with two lines of code
 author: Chris Done
 tags: internet explorer, despair, microsoft
 ---

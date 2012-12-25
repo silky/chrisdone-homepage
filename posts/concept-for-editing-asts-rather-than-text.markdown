@@ -1,6 +1,7 @@
 ---
 date: 2011-12-17
 title: A concept for editing code as an AST rather than text
+description: A concept for editing code as an AST rather than text
 author: Chris Done
 tags: haskell
 ---

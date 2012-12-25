@@ -1,6 +1,7 @@
 ---
 date: 2011-10-10
 title: Names in software systems
+description: Names in software systems
 author: Chris Done
 tags: software, culture
 ---

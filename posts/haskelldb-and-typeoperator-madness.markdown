@@ -1,6 +1,7 @@
 ---
 date: 2010-10-07
 title: HaskellDB and TypeOperators madness
+description: HaskellDB and TypeOperators madness
 author: Chris Done
 tags: haskell, haskelldb
 ---
