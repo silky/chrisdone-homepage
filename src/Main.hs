@@ -25,8 +25,8 @@ main = hakyll $ do
             >>> relativizeUrlsCompiler
 
     -- Render posts list
-    match "posts.html" $ route idRoute
-    create "posts.html" $ constA mempty
+    match "all-posts" $ route idRoute
+    create "all-posts" $ constA mempty
         >>> arr (setField "title" "All posts")
         >>> requireAllA "posts/*" (id *** arr dateOrdered >>> addPostList)
         >>> applyTemplateCompiler "templates/posts.html"
@@ -34,8 +34,8 @@ main = hakyll $ do
         >>> relativizeUrlsCompiler
 
     -- Index
-    match "index.html" $ route idRoute
-    create "index.html" $ constA mempty
+    match "index" $ route $ idRoute
+    create "index" $ constA mempty
         >>> arr (setField "title" "Home")
         >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . dateOrdered) >>> addPostList)
         >>> applyTemplateCompiler "templates/index.html"
