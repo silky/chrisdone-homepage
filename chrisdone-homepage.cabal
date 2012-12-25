@@ -1,0 +1,19 @@
+name:                chrisdone-homepage
+version:             0.1.0.0
+synopsis:            Chris Done's homepage.
+description:         Chris Done's homepage.
+license:             BSD3
+author:              Chris Done <chrisdone@gmail.com>
+maintainer:          Chris Done <chrisdone@gmail.com>
+copyright:           2012 Chris Done
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable chrisdone-homepage
+  hs-source-dirs:    src
+  main-is:           Main.hs
+  build-depends:     base > 4 && < 5,
+                     hakyll == 3.5.2.0,
+                     old-locale,
+                     time
