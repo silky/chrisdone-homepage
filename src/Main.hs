@@ -7,6 +7,7 @@ import Data.List
 import Data.Monoid
 import Data.Ord
 import Hakyll
+import Hakyll.Web.Page.Metadata
 import Prelude hiding (id,(.))
 
 main :: IO ()
@@ -31,6 +32,7 @@ main = hakyll $ do
         route   $ setExtension ""
         compile $ pageCompiler
             >>> renderTagsField "prettytags" (fromCapture "tags/*")
+            >>> arr (copyBodyToField "description")
             >>> applyTemplateCompiler "templates/post.html"
             >>> applyTemplateCompiler "templates/default.html"
             >>> relativizeUrlsCompiler
