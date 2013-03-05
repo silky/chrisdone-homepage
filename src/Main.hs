@@ -17,6 +17,11 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    -- CV
+    match "cv.pdf" $ do
+      route idRoute
+      compile copyFileCompiler
+
     -- Comics
     match "images/comics/*" $ do
         route   idRoute
