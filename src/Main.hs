@@ -22,6 +22,11 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    -- jquery-console
+    match "jquery-console/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- CV
     match "cv.pdf" $ do
       route idRoute
