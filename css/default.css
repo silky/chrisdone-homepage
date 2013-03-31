@@ -1,100 +1,35 @@
-body {
-  margin:0;
-  padding:0;
-  color:#555
-}
 .page-wrap {
-  width:35em;
-  margin:0em auto;
-  border-radius:5px;
-  padding:0px 25px 30px 25px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px
+  max-width: 40em;
+  margin: auto;
+  font-family: georgia, serif;
 }
-.me {
-  background:url(/images/me.png) no-repeat top right;
-  padding:5px 25px 30px 25px
+body {
+  color: #000000;
+  background-color: #ffffff;
 }
-h1,h2 {
-  font-family:"dejavu sans",sans-serif
+.comment {
+  /* font-lock-comment-face */
+  color: #4F4371;
 }
-p,ul {
-  font-family:georgia,serif;
-  font-size:1.2em;
-  line-height:1.4em
+.constant {
+  /* font-lock-constant-face */
+  color: #008b8b;
 }
+.keyword {
+  /* font-lock-keyword-face */
+  color: #a020f0;
+}
+.string {
+  /* font-lock-string-face */
+  color: #8b2252;
+}
+
 a {
-  color:#386794;
-  text-decoration:none;
-  font-family:"dejavu serif",serif
 }
 a:hover {
-  color:#1d4c77;
-  text-decoration:underline
+  text-decoration: underline;
 }
-a:visited,a:active {
-  color:#6c88a2
-}
-li + li {
-  margin-top:0.5em
-}
-p.caption {
-  margin:0;
-  padding:0;
-  font-style:italic;
-  color:#777;
-  font-size:0.9em
-}
-div.figure {
-  float:right;
-  margin-top:20px
-}
-hr {
-  color:#eee;
-  border:1px solid #eee;
-  background:#eee
-}
-blockquote {
-  margin:0em 1em;
-  padding:0.1em 1em;
-  background:#eee
-}
-pre {
-  margin:0em 1em;
-  padding:1em 1em;
-  background:#f7f7f7;
-  overflow:auto
-}
-.body {
-  clear:both;
-  padding-top:5px
-}
-.clear {
-  clear:both
-}
-code {
-  color:#555
-}
-blockquote + center {
-  margin-top:1em
-}
-.footnoteRef:target {
-  background:#333;
-  color:white;
-  border-radius:0.2em
-}
-.footnotes li {
-  border-top:1px solid #fff;
-  border-bottom:1px solid #fff
-}
-.footnotes li:target {
-  background:#F4F4F4;
-  border-top:1px solid #CCC;
-  border-bottom:1px solid #CCC
-}
-.footnotes li p {
-  margin:0
-}
-.footnotes li * + * {
-  margin-top:0.5em !important
-}
+pre { border: 1px solid #ddd; background: #eee; padding:
+      1em }
+code { border: 1px solid #ddd; background: #eee; padding: 0.1em }
+blockquote { border: 1px solid #ddd; background: #eee; padding: 0 1em;}
