@@ -32,4 +32,5 @@ a:hover {
 pre { border: 1px solid #ddd; background: #eee; padding:
       1em }
 code { border: 1px solid #ddd; background: #eee; padding: 0.1em }
+pre code { border: 0; }
 blockquote { border: 1px solid #ddd; background: #eee; padding: 0 1em;}
