@@ -386,23 +386,27 @@ var Player = (function(){
     this.exploding = false;
     this.dead = false;
   };
+    var left = Math.PI*1.5;
+    var top = 0;
+    var bottom = Math.PI;
+    var right = Math.PI*0.5;
   Player.prototype.accelUp = function(){
-    this.r = (this.r)  /2;
+      this.r = top;
     var maxAccel = this.maxAccel;
     this.yAccel = Math.inRange(-maxAccel,maxAccel,this.yAccel-this.speed);
   };
   Player.prototype.accelDown = function(){
-    this.r = (this.r + Math.PI)  /2;
+      this.r = down;
     var maxAccel = this.maxAccel;
     this.yAccel = Math.inRange(-maxAccel,maxAccel,this.yAccel+this.speed);
   };
   Player.prototype.accelRight = function(){
-    this.r = (this.r + (Math.PI/2))  /2;
+      this.r = right;
     var maxAccel = this.maxAccel;
     this.xAccel = Math.inRange(-maxAccel,maxAccel,this.xAccel+this.speed);
   };
   Player.prototype.accelLeft = function(){
-    this.r = (this.r + (Math.PI*1.5))  /2;
+      this.r = left;
     var maxAccel = this.maxAccel;
     this.xAccel = Math.inRange(-maxAccel,maxAccel,this.xAccel-this.speed);
   };
