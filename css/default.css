@@ -13,9 +13,14 @@ h1 + p {
   text-shadow: 1px 1px 1px #ffffff;
 }
 h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-style: italic;
   color: #546369;
+}
+h3 {
+  font-size: 1em;
+  font-style: italic;
+  color: #666
 }
 a {
   color: #1a6e8e;
@@ -23,8 +28,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
-p {
+p,li {
   text-shadow: none;
+  line-height: 1.5em;
 }
 pre {
   border: 1px solid #ddd;
