@@ -95,6 +95,14 @@ main = hakyll $ do
             >>> arr reverse
             >>> renderRss feedConfiguration
 
+    match "haskell.rss" $ route idRoute
+    create "haskell.rss" $
+        requireAll_ "posts/*"
+            >>> arr (filter (any (=="haskell") . words . getField "tags"))
+            >>> arr dateOrdered
+            >>> arr reverse
+            >>> renderRss feedConfiguration
+
     -- Read templates
     match "templates/*" $ compile templateCompiler
 
@@ -115,7 +123,7 @@ dateOrdered = sortBy (comparing (getField "date"))
 --
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
-    arr reverse
+    arr (reverse . dateOrdered)
         >>> require "templates/postitem.html" (\p t -> map (applyTemplate t) p)
         >>> arr mconcat
         >>> arr pageBody
