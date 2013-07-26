@@ -6,6 +6,7 @@ import Control.Category
 import Data.List
 import Data.Monoid
 import Data.Ord
+import Data.Char
 import Hakyll
 import Hakyll.Web.Page.Metadata
 import Prelude hiding (id,(.))
@@ -98,7 +99,7 @@ main = hakyll $ do
     match "haskell.rss" $ route idRoute
     create "haskell.rss" $
         requireAll_ "posts/*"
-            >>> arr (filter (any (=="haskell") . words . getField "tags"))
+            >>> arr (filter (isInfixOf "haskell" . getField "tags"))
             >>> arr dateOrdered
             >>> arr reverse
             >>> renderRss feedConfiguration
