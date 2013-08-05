@@ -6,10 +6,17 @@ author: Chris Done
 tags: haskell, design
 ---
 
+**Update**: It seems that we are in agreement on the theme. I've begun
+  [a HaskellWiki page](http://www.haskell.org/haskellwiki/Brand) prescribing
+  the brand, and guides of how to migrate or design existing sites in
+  this theme.
+
 There are points that need to be agreed upon by the community:
 
 * The palette
 * The target audience
+
+## Palette & Theme
 
 We used to have a palette of green and purple:
 
@@ -34,12 +41,15 @@ Haskell sites have no consistent common palette or theme:
 * [Hoogle](http://www.haskell.org/hoogle/) — purple
 * [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) — google
 * [Planet Haskell](http://planet.haskell.org/) — no particular theme
+* [Haskellers](http://haskellers.com/) — red and blue
+
+## Audience
 
 The target audience can be:
 
 * Existing Haskell users
 * Programmers interested in Haskell
-* Businesss interested in Haskell
+* Businesses interested in Haskell
 
 Our existing sites target:
 
@@ -53,7 +63,10 @@ Our existing sites target:
 * Hoogle — people who are new to Hoogle, but already know Haskell
 * Hayoo — general Haskellers
 * Planet Haskell — anyone interested in Haskell
+* Haskellers — business
 * FP Complete — business
+
+## Next steps
 
 The next steps are:
 
@@ -61,3 +74,14 @@ The next steps are:
 * Use that theme across the board
 * Consolidate the audiences and make clear navigation paths between the subsites
 * Make haskell.org sell itself better to the audience we decide it should aim at
+
+Here is Bootstrap (which serves as a very good template for testing themes), re-themed with whatever I've been able to garner—which sopvop says is called Ocean—as being a theme (colors, some borders and heading font) from haskell.org:
+
+* [Ocean](http://tryhaskell.org/ocean/)
+
+[Here is an icon font for Haskell.](http://tryhaskell.org/haskell-font/)
+
+## Layout
+
+The layout of the page is something that can come later and follow
+naturally from the two points outlined above.
