@@ -1,10 +1,13 @@
 ---
 date: 2013-09-15
-title: Last.fm / scrobbling
+title: Goodbye, Last.fm
 description: Last.fm / scrobbling
 author: Chris Done
 tags: last.fm, music, scrobbling, haskell
 ---
+
+*tl;dr: I replaced my dependence on Last.fm with my own service
+ [http://chrisdone.com/music](http://chrisdone.com/music).*
 
 In my [last post](/posts/lastfm) (admittedly, a year ago) I talked
 about how Last.fm had served me well enough over the years, but that
@@ -44,7 +47,10 @@ I made a simple greasemonkey script for
 [Grooveshark](http://grooveshark.com) (which is pretty much all I use
 right now to play music) that would submit tracks every 30 seconds to
 my local server. I'll probably make a script for YouTube, too, because
-I sometimes listen to music on there.
+I sometimes listen to music on there. Grooveshark supports
+“favouriting” tracks, which I also added a hook for—when a track is
+favourited, it submits it to my server as “loved”. Like Last.fm, I
+don't care about what Grooveshark stores.
 
 I added to the web server a little summary page, then I installed it
 on my Hetzner dedicated host under chrisdone.com,
