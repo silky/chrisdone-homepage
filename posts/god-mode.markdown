@@ -1,6 +1,6 @@
 ---
 date: 2013-09-21
-title: God-mode for Emcas
+title: God-mode for Emacs
 description: Evaluation of God-mode for Emacs
 author: Chris Done
 tags: emacs, vim
