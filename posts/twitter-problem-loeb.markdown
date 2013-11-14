@@ -10,9 +10,9 @@ tags: haskell, puzzles
 .g b{background:#888;color:#eee}
 .g i{background:#ccc;color:#888}
 .g a{background:#1a6e8e;color:#1a6e8e;}
-.g u{background:#8f4e8b;color:#fff;text-shadow:none;text-decoration:none;}
-.g s{background:#397460;color:#fff;text-shadow:none;text-decoration:none;}
-.g b,.g i,.g a,.g u,.g s {padding:0.2em;display:block;border-radius:0.1em;width:1em;height:1em;float:left;margin:0.1em;line-height:1em;text-align:center;font-weight:normal;}
+.g u{background:#8f4e8b;color:#fff;text-decoration:none;}
+.g s{background:#397460;color:#fff;text-decoration:none;}
+.g b,.g i,.g a,.g u,.g s {padding:0.2em;display:block;border-radius:0.1em;width:1em;height:1em;float:left;margin:0.1em;line-height:1em;text-align:center;font-weight:normal;text-shadow:none;}
 .g em{clear:both;display:block}
 </style>
 
@@ -112,7 +112,7 @@ water land = go 0 0 (V.length land - 1) 0 0 where
   extend i d = if land!i > d then land!i else d
 ```
 
-But I still thought my spreadsheet idea still had merit.
+But I still thought my spreadsheet idea was feasible.
 
 ## My approach
 
@@ -156,7 +156,7 @@ An example of `i` is:
 </div>
 
 We spread out in both directions to find the “peak” of the
-column, before they start decreasing in height again:
+columns:
 
 <div class="g">
 <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
@@ -202,7 +202,7 @@ neighbors. Until we reach the ends:
 The ends of the wall are the only ones who only have _one side_
 defined in terms of their single neighbor, which makes complete
 sense. Their volume is always `0`. It's impossible to have a puddle on
-the edge. A will be defined in terms of X, and B will be defined in
+the edge. A’s “right” will be defined in terms of X, and B’s “left” will be defined in
 terms of Y.
 
 But how does this approach avoid infinite cycles? Easy. Each column in
@@ -263,8 +263,8 @@ I first heard about `loeb` from Dan Piponi’s
 [From Löb's Theorem to Spreadsheet Evaluation](http://blog.sigfpe.com/2006/11/from-l-theorem-to-spreadsheet.html)
 some years back, and ever since I've been wanted to use it for a real
 problem. It lets you easily define a spreadsheet generator by mapping
-over a functor containing functions. To each function in the functor,
-the functor itself is given to it.
+over a functor containing functions. To each function in the container,
+the container itself is passed to that function.
 
 Here's `loeb`:
 
@@ -280,6 +280,8 @@ edges—and then simply makes a sum total of the third value, the
 volumes.
 
 ``` haskell
+{-# LANGUAGE NoMonomorphismRestriction #-}
+
 import Control.Lens
 import qualified Data.Vector as V
 import Data.Vector ((!),Vector)
@@ -302,4 +304,8 @@ It's not the most efficient algorithm—it relies on laziness in an
 almost perverse way, but I like that I was able to express exactly what
 occured to me. And `loeb` is suave.
 
-This is was also my first ever use of lens, so that was fun.
+This is was also my first ever use of lens, so that was fun. The
+`NoMonomorphismRestriction` and `cloneLens` are required because you
+can't pass in an arbitrary lens and then use it both as a setter and a
+getter, the type becomes fixed on one or the other. I find that pretty
+disappointing. But otherwise the lenses made the code simpler.
