@@ -1,0 +1,305 @@
+---
+date: 2013-11-14
+title: Twitter waterflow problem and loeb
+description: A Clockwork Orange film mention
+author: Chris Done
+tags: haskell, puzzles
+---
+
+<style>
+.g b{background:#888;color:#eee}
+.g i{background:#ccc;color:#888}
+.g a{background:#1a6e8e;color:#1a6e8e;}
+.g u{background:#8f4e8b;color:#fff;text-shadow:none;text-decoration:none;}
+.g s{background:#397460;color:#fff;text-shadow:none;text-decoration:none;}
+.g b,.g i,.g a,.g u,.g s {padding:0.2em;display:block;border-radius:0.1em;width:1em;height:1em;float:left;margin:0.1em;line-height:1em;text-align:center;font-weight:normal;}
+.g em{clear:both;display:block}
+</style>
+
+## The Waterflow Problem
+
+I recently saw _[I Failed a Twitter
+Interview](http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/)_
+which features the following cute problem. Consider the following picture:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <b>5</b> <i></i>  <i></i>  <i></i>  <i></i> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <i></i>  <b>4</b> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <b>3</b> <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b>2</b> <b></b>  <i></i>  <b>2</b> <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b></b>  <b></b>  <b>1</b> <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+</div>
+
+<strong><em>Fig. 1</em></strong>
+
+In *Fig. 1*, we have walls of different heights. Such pictures are
+represented by an array of integers, where the value at each index is
+the height of the wall. *Fig. 1* is represented with an array
+as `[2,5,1,2,3,4,7,7,6]`.
+
+Now imagine it rains. How much water is going to be accumulated in
+puddles between walls? For example, if it rains in _Fig 1_,
+the following puddle will be formed:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <b>5</b> <a></a>  <a></a>  <a></a>  <a></a> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <a></a>  <a></a>  <a></a>  <b>4</b> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <a></a>  <a></a>  <b>3</b> <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b>2</b> <b></b>  <a></a>  <b>2</b> <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b></b>  <b></b>  <b>1</b> <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+</div>
+
+<strong><em>Fig. 2</em></strong>
+
+No puddles are formed at edges of the wall, water is considered to
+simply run off the edge.
+
+We count volume in square blocks of 1×1. Thus, we are left with a
+puddle between column 1 and column 6 and the volume is 10.
+
+Write a program to return the volume for any array.
+
+## My Reaction
+
+I thought, this looks like a spreadsheet problem, and closed the page,
+to get on with my work. Last thing I need right now is nerd sniping.
+
+A week or so later I saw
+_[A functional solution to Twitter's waterflow problem](http://philipnilsson.github.io/Badness10k/articles/waterflow/)_
+which presented a rather concise and beautiful approach to solving the
+problem. I present it here, in the style that I prefer:
+
+``` haskell
+water :: [Int] -> Int
+water h =
+  sum (zipWith (-)
+               (zipWith min
+                        (scanl1 max h)
+                        (scanr1 max h))
+               h)
+```
+
+An efficient algorithm can be achieved with a trivial rewrite of
+Michael Kozakov’s
+[Java solution](https://gist.github.com/mkozakov/59af0fd5bddbed1a0399)
+is:
+
+``` haskell
+{-# LANGUAGE BangPatterns #-}
+{-# LANGUAGE ViewPatterns #-}
+
+import qualified Data.Vector as V
+import Data.Vector ((!),Vector)
+
+water :: Vector Int -> Int
+water land = go 0 0 (V.length land - 1) 0 0 where
+  go !volume !left !right
+     (extend left -> leftMax)
+     (extend right -> rightMax)
+    | left < right =
+      if leftMax >= rightMax
+         then go (volume + rightMax - land!right)
+                 left (right - 1) leftMax rightMax
+         else go (volume + leftMax - land!left)
+                 (left +  1) right leftMax rightMax
+    | otherwise = volume
+  extend i d = if land!i > d then land!i else d
+```
+
+But I still thought my spreadsheet idea still had merit.
+
+## My approach
+
+In a similar way to Philip Nilsson, I can define the problem as it
+comes intuitively to me. As I saw it in my head, the problem can be
+broken down into “what is the volume that a given column will hold?”
+That can be written like this:
+
+> volume<sub>0</sub> = 0
+>
+> volume<sub>|S|-1</sub> = 0
+>
+> volume<sub>i</sub> = min(left<sub>i−1</sub>,right<sub>i+1</sub>)−height<sub>i</sub>
+>
+
+Where <i>left</i> and <i>right</i> are the peak heights to the left or right:
+
+> left<sub>0</sub> = height<sub>0</sub>
+>
+> left<sub>i</sub> = max(height<sub>i</sub>,left<sub>i-1</sub>)
+>
+> right<sub>|S|-1</sub> = height<sub>|S|-1</sub>
+>
+> right<sub>i</sub> = max(height<sub>i</sub>,right<sub>i+1</sub>)
+
+That's all.
+
+## A visual example
+
+An example of `i` is:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <b>5</b> <i></i>  <i></i>  <i></i>  <i></i> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <i></i>  <b>4</b> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <b>3</b> <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b>2</b> <b></b>  <i></i>  <u>2</u> <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b></b>  <b></b>  <b>1</b> <u></u>  <b></b>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+</div>
+
+We spread out in both directions to find the “peak” of the
+column, before they start decreasing in height again:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <s>7</s> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <s></s>  <b></b>  <b>6</b> <em></em>
+<i></i>  <s>5</s> <i></i>  <i></i>  <i></i>  <i></i> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <i></i>  <i></i>  <b>4</b> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <i></i>  <b>3</b> <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b>2</b> <s></s>  <i></i>  <u>2</u> <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b></b>  <s></s>  <b>1</b> <u></u>  <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+</div>
+
+How do we do that? We simply define the volume of a column to be in
+terms of our immediate neighbors to the left and to the right:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <b>5</b> <i></i>  <i></i>  <i></i>  <i></i> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <i></i>  <b>4</b> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <s>3</s> <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b>2</b> <b></b>  <i></i>  <u>2</u> <s></s>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b></b>  <b></b>  <s>1</s> <u></u>  <s></s>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <i></i>  <i>A</i>  <i>X</i>  <i>B</i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+</div>
+
+X is defined in terms of A and B. A and B are, in turn, are defined in terms of their immediate
+neighbors. Until we reach the ends:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <s>6</s> <em></em>
+<i></i>  <b>5</b> <i></i>  <i></i>  <i></i>  <i></i> <b></b>  <b></b>  <s></s>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <i></i>  <b>4</b> <b></b>  <b></b>  <s></s>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <b>3</b> <b></b>  <b></b>  <b></b>  <s></s>  <em></em>
+<s>2</s> <b></b>  <i></i>  <u>2</u> <b></b>  <b></b>  <b></b>  <b></b>  <s></s>  <em></em>
+<s></s>  <b></b>  <b>1</b> <u></u>  <b></b>  <b></b>  <b></b>  <b></b>  <s></s>  <em></em>
+<i>A</i>  <i>X</i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i>Y</i>  <i>B</i>  <em></em>
+</div>
+
+The ends of the wall are the only ones who only have _one side_
+defined in terms of their single neighbor, which makes complete
+sense. Their volume is always `0`. It's impossible to have a puddle on
+the edge. A will be defined in terms of X, and B will be defined in
+terms of Y.
+
+But how does this approach avoid infinite cycles? Easy. Each column in
+the spreadsheet contains three values:
+
+1. The peak to the left.
+2. The peak to the right.
+3. My volume.
+
+A and B below depend upon eachother, but for different slots. A
+depends on the value of B's “right” peak value, and B depends on the
+value of A's “left” value:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <b>5</b> <i></i>  <i></i>  <i></i>  <i></i> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <i></i>  <b>4</b> <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <b></b>  <i></i>  <i></i>  <s>3</s> <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b>2</b> <b></b>  <i></i>  <u>2</u> <s></s>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<b></b>  <b></b>  <b>1</b> <u></u>  <s></s>  <b></b>  <b></b>  <b></b>  <b></b>  <em></em>
+<i></i>  <i></i>  <i></i>  <i>A</i>  <i>B</i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+</div>
+
+The _height_ of the column's peak will be the smallest of the two
+peaks on either side:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <s>5</s> <i></i>  <a></a>  <i></i>  <i></i> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <i></i>  <i></i>  <b>4</b> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <i></i>  <b>3</b> <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b>2</b> <s></s>  <i></i>  <u>2</u> <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b></b>  <s></s>  <b>1</b> <u></u>  <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+</div>
+
+And then the _volume_ of the column is simply the height of the peak
+minus the column's height:
+
+<div class="g">
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b>7</b> <b>7</b> <i></i>  <em></em>
+<i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <i></i>  <b></b>  <b></b>  <b>6</b> <em></em>
+<i></i>  <s>5</s> <i></i>  <a></a>  <i></i>  <i></i> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <a></a>  <i></i>  <b>4</b> <s></s>  <b></b>  <b></b>  <em></em>
+<i></i>  <s></s>  <i></i>  <a></a>  <b>3</b> <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b>2</b> <s></s>  <i></i>  <u>2</u> <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+<b></b>  <s></s>  <b>1</b> <u></u>  <b></b>  <b></b>  <s></s>  <b></b>  <b></b>  <em></em>
+</div>
+
+
+## Enter loeb
+
+I first heard about `loeb` from Dan Piponi’s
+[From Löb's Theorem to Spreadsheet Evaluation](http://blog.sigfpe.com/2006/11/from-l-theorem-to-spreadsheet.html)
+some years back, and ever since I've been wanted to use it for a real
+problem. It lets you easily define a spreadsheet generator by mapping
+over a functor containing functions. To each function in the functor,
+the functor itself is given to it.
+
+Here's `loeb`:
+
+``` haskell
+loeb :: Functor f => f (f b -> b) -> f b
+loeb x = fmap (\f -> f (loeb x)) x
+```
+
+So as described in the elaboration of how I saw the problem in my
+head, the solution takes the vector of numbers, generates a
+spreadsheet of triples, defined in terms of their neighbors—exept
+edges—and then simply makes a sum total of the third value, the
+volumes.
+
+``` haskell
+import Control.Lens
+import qualified Data.Vector as V
+import Data.Vector ((!),Vector)
+
+water :: Vector Int -> Int
+water = V.sum . V.map (view _3) . loeb . V.imap cell where
+  cell i x xs
+    | i == 0               = edge _1
+    | i == V.length xs - 1 = edge _2
+    | otherwise            = col i x xs
+    where edge ln = set l (view l (col i x xs)) (x,x,0)
+            where l = cloneLens ln
+  col i x xs = (l,r,min l r - x)
+    where l = neighbor _1 (+)
+          r = neighbor _2 (-)
+          neighbor l o = max x (view l (xs ! (i `o` 1)))
+```
+
+It's not the most efficient algorithm—it relies on laziness in an
+almost perverse way, but I like that I was able to express exactly what
+occured to me. And `loeb` is suave.
+
+This is was also my first ever use of lens, so that was fun.

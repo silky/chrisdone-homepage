@@ -7,13 +7,18 @@ tags: emacs, vim
 ---
 
 A month ago I blogged about ways to reduce strenuous key presses in my
-Emacs use. I [analyzed my runs of chords in
-Emacs](/posts/emacs-key-analysis), then
+Emacs use. I
+[analyzed my runs of chords in Emacs](/posts/emacs-key-analysis), then
 [speculated](/posts/speculations-on-exclusive-editing) on the merits
-of [exclusive vs mixed
-editing](http://chrisdone.com/posts/modal-editors). Since then I wrote
-an Emacs mode called
-[god-mode](https://github.com/chrisdone/god-mode/).
+of
+[exclusive vs mixed editing](http://chrisdone.com/posts/modal-editors). Since
+then I wrote an Emacs mode called
+[god-mode](https://github.com/chrisdone/god-mode/). It's a mode that
+you toggle in and out of, and when you're in it, all keys are
+implicitly prefixed with `C-` (among other helpful shortcuts). Over
+all, it's been a resounding success. A couple other people, including
+the author of multiple mark mode, contributed some patches. I've been
+using it for a month and have been very satisfied.
 
 For those interested in the keymapping as of writing, you can [skip to
 that section below.](#the-keymapping)
@@ -22,19 +27,19 @@ that section below.](#the-keymapping)
 
 Coming back to the examples I came up with in [speculations on
 exclusive editing]((/posts/speculations-on-exclusive-editing)), God-mode
-is on par with Vim. In fact, it's fewer key presses for each one:
+is on par with Vim. In fact, it's the same or fewer key presses for each one:
 
     Vim:   bbDi (5)
-    Emacs: g.ki (4)
+    Emacs: gb.ki (5)
 
     Vim:   db.i (4)
-    Emacs: g←. (3)
+    Emacs: g←.i (4)
 
     Vim:   ?r↲lDi (8)
     Emacs: rr↲ki (5)
 
 That's not bad. I grant that my Vim fu is weak, so probably there are
-shorter ways to write the Vmi examples. But at any rate Emacs is doing
+shorter ways to write the Vim examples. But at any rate Emacs is doing
 well here.
 
 ## Evaluation After One Month
