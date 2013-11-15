@@ -75,8 +75,17 @@ footer {
   text-decoration: none;
 }
 #social li,#archive li,#posts ul li {
-  line-height: 1.5em;
+  line-height: 2em;
 }
+#archive,#social,#posts ul,#contact ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#archive a,#social a,#posts ul a,#contact ul a {
+  text-decoration: none
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Syntax highlighting */

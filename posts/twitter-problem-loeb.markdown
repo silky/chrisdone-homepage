@@ -125,8 +125,7 @@ That can be written like this:
 >
 > volume<sub>|S|-1</sub> = 0
 >
-> volume<sub>i</sub> = min(left<sub>i−1</sub>,right<sub>i+1</sub>)−height<sub>i</sub>
->
+> volume<sub>i</sub> = min(left<sub>i-1</sub>,right<sub>i+1</sub>)−height<sub>i</sub>
 
 Where <i>left</i> and <i>right</i> are the peak heights to the left or right:
 
@@ -261,7 +260,7 @@ minus the column's height:
 
 I first heard about `loeb` from Dan Piponi’s
 [From Löb's Theorem to Spreadsheet Evaluation](http://blog.sigfpe.com/2006/11/from-l-theorem-to-spreadsheet.html)
-some years back, and ever since I've been wanted to use it for a real
+some years back, and ever since I've been wanting to use it for a real
 problem. It lets you easily define a spreadsheet generator by mapping
 over a functor containing functions. To each function in the container,
 the container itself is passed to that function.
@@ -280,32 +279,79 @@ edges—and then simply makes a sum total of the third value, the
 volumes.
 
 ``` haskell
-{-# LANGUAGE NoMonomorphismRestriction #-}
 
-import Control.Lens
-import qualified Data.Vector as V
-import Data.Vector ((!),Vector)
+  import Control.Lens
+  import qualified Data.Vector as V
+  import Data.Vector ((!),Vector)
 
-water :: Vector Int -> Int
-water = V.sum . V.map (view _3) . loeb . V.imap cell where
-  cell i x xs
-    | i == 0               = edge _1
-    | i == V.length xs - 1 = edge _2
-    | otherwise            = col i x xs
-    where edge ln = set l (view l (col i x xs)) (x,x,0)
-            where l = cloneLens ln
-  col i x xs = (l,r,min l r - x)
-    where l = neighbor _1 (+)
-          r = neighbor _2 (-)
-          neighbor l o = max x (view l (xs ! (i `o` 1)))
+  water :: Vector Int -> Int
+  water = V.sum . V.map (view _3) . loeb . V.imap cell where
+    cell i x xs
+      | i == 0               = edge _2
+      | i == V.length xs - 1 = edge _1
+      | otherwise            = col i x xs
+      where edge ln = set l (view l (col i x xs)) (x,x,0)
+              where l r = cloneLens ln r
+    col i x xs = (l,r,min l r - x)
+      where l = neighbor _1 (-)
+            r = neighbor _2 (+)
+            neighbor l o = max x (view l (xs ! (i `o` 1)))
 ```
 
 It's not the most efficient algorithm—it relies on laziness in an
 almost perverse way, but I like that I was able to express exactly what
 occured to me. And `loeb` is suave.
 
-This is was also my first ever use of lens, so that was fun. The
-`NoMonomorphismRestriction` and `cloneLens` are required because you
-can't pass in an arbitrary lens and then use it both as a setter and a
-getter, the type becomes fixed on one or the other. I find that pretty
-disappointing. But otherwise the lenses made the code simpler.
+This is was also my first use of
+[lens](http://hackage.haskell.org/package/lens), so that was fun. The
+`cloneLens` are required because you can't pass in an arbitrary lens
+and then use it both as a setter and a getter, the type becomes fixed
+on one or the other, making it not really a _lens_ anymore. I find
+that pretty disappointing. But otherwise the lenses made the code
+simpler.
+
+## Update with comonads & pointed lists
+
+Michael Zuser pointed out another cool insight from
+_[Comonads and reading from the future](http://blog.sigfpe.com/2007/02/comonads-and-reading-from-future.html?showComment=1171056660000#c2284986681058924897)_
+(Dan Piponi’s blog is a treasure trove!)
+that while `loeb` lets you look at the _whole_ container, giving you
+_absolute_ references, the equivalent corecursive fix (below `wfix`) on a comonad
+gives you _relative_ references. Michael demonstrates below using Jeff
+Wheeler’s
+[pointed list](http://hackage.haskell.org/package/pointedlist-0.4.0.3/docs/Data-List-PointedList.html)
+library and Edward Kmett's
+[comonad](http://hackage.haskell.org/package/comonad) library:
+
+``` haskell
+import Control.Comonad
+import Control.Lens
+import Data.List.PointedList (PointedList)
+import qualified Data.List.PointedList as PE
+import Data.Maybe
+
+instance Comonad PointedList where
+    extend  = PE.contextMap
+    extract = PE._focus
+
+water :: [Int] -> Int
+water = view _2 . wfix . fmap go . fromMaybe (PE.singleton 0) . PE.fromList
+  where
+    go height context = (lMax, total, rMax)
+      where
+        get f = maybe (height, 0, height) PE._focus $ f context
+        (prevLMax,         _,        _) = get PE.previous
+        (_       , prevTotal, prevRMax) = get PE.next
+        lMax = max height prevLMax
+        rMax = max height prevRMax
+        total = prevTotal + min lMax rMax - height
+```
+
+## Update on lens
+
+Russell O'Connor gave me some hints for reducing the lens
+verbiage. First, eta-reducing the locally defined lens `l` in my code
+removes the need for the `NoMonomorphismRestriction` extension, so
+I've removed that. Second, a rank-N type can also be used, but then
+the type signature is rather large and I'm unable to redouce it
+presently without reading more of the lens library.
