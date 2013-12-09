@@ -412,29 +412,32 @@ water = flip evalTardis (minBound, minBound) . foldM go 0
 
 Sami Hangaslammi submitted this fast version (clocks in at 33.80864 us):
 
-    import Data.Array
+``` haskell
+import Data.Array
 
-    waterVolume :: Array Int Int -> Int
-    waterVolume arr = go 0 minB maxB where
-        (minB,maxB) = bounds arr
+waterVolume :: Array Int Int -> Int
+waterVolume arr = go 0 minB maxB where
+  (minB,maxB) = bounds arr
 
-        go !acc lpos rpos
-            | lpos >= rpos             = acc
-            | leftHeight < rightHeight = segment leftHeight    1  acc lpos contLeft
-            | otherwise                = segment rightHeight (-1) acc rpos contRight
-            where
-                leftHeight          = arr ! lpos
-                rightHeight         = arr ! rpos
-                contLeft  acc' pos' = go acc' pos' rpos
-                contRight acc' pos' = go acc' lpos pos'
+  go !acc lpos rpos
+    | lpos >= rpos             = acc
+    | leftHeight < rightHeight =
+      segment leftHeight    1  acc lpos contLeft
+    | otherwise                =
+      segment rightHeight (-1) acc rpos contRight
+    where
+        leftHeight          = arr ! lpos
+        rightHeight         = arr ! rpos
+        contLeft  acc' pos' = go acc' pos' rpos
+        contRight acc' pos' = go acc' lpos pos'
 
-        segment limit move !acc' !pos cont
-            | delta <= 0 = cont acc' pos'
-            | otherwise  = segment limit move (acc' + delta) pos' cont
-            where
-                delta = limit - arr ! pos'
-                pos'  = pos + move
-
+  segment limit move !acc' !pos cont
+    | delta <= 0 = cont acc' pos'
+    | otherwise  = segment limit move (acc' + delta) pos' cont
+    where
+        delta = limit - arr ! pos'
+        pos'  = pos + move
+```
 
 Changing the data structure to a vector brings this down to 26.79492 us.
 
