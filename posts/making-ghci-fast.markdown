@@ -29,3 +29,8 @@ useful warnings (like pattern match inexhaustiveness). So I would
 combine it with `-fobject-code` in the same way as above with
 `-fbyte-code`, and then once you're done hacking, re-enable
 `-fobject-code` and rebuild everything.
+
+I made
+[a HaskellWiki](http://www.haskell.org/haskellwiki/Making_GHCi_scale_better_and_faster)
+version of this post for future updates by other people. In the chance
+that others find this page later on, they can visit this wiki page.
