@@ -9,9 +9,10 @@ tags: emacs
 Within the constraints of the Emacs environment, there are no
 limits. Emacs is built upon this principle; the Lisp principle. Make
 some small kernel of features. A substrate. Take care to make this
-substrate programmable, and then build the system upon it. Let users
-worry about future features. Some 359,000 lines of C code comprise its
-kernel, and 1,637,000 lines of Emacs Lisp take the rest of it.
+substrate programmable (in any language, Emacs chooses Lisp), and then
+build the system upon it. Let users worry about future features. Some
+359,000 lines of C code comprise its kernel, and 1,637,000 lines of
+Emacs Lisp take the rest of it.[^1]
 
 Similarly, the nature of The
 [Lisp Curse](http://www.winestockwebdesign.com/Essays/Lisp_Curse.html)
@@ -97,3 +98,9 @@ job and have to hobble around for a few days, but in the end it's
 always fixable.
 
 And they lisp.
+
+[^1]: Though, while Elisp is Emacs's programmability language
+      of choice, the particular language doesn't matter much. It could
+      be Python, JavaScript, Haskell, whatever. The key is: if most of
+      your feature set is written in your editor's programming
+      language, then that editor is very programmable.
