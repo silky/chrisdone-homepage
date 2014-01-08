@@ -1,8 +1,10 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Layout/theme */
-
+sup + sup {
+margin-left: 0.25em;
+}
 body {
-  background: #e6e6e6;
+  background: #efefef;
   color: #444;
   text-shadow: 1px 1px 1px #ffffff;
   font-size: 20px;
@@ -33,7 +35,7 @@ a:hover {
 }
 p,li {
   text-shadow: none;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 pre {
   border: 1px solid #ddd;

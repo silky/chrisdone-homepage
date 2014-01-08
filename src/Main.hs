@@ -23,6 +23,14 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "structured-haskell-mode/gifs/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "fpco/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- Numbergeddon
     match "numbergeddon/*" $ do
         route   idRoute
