@@ -39,14 +39,14 @@ p,li {
 }
 pre {
   border: 1px solid #ddd;
-  background: #eee;
+  background: #f5f5f5;
   padding: 1em;
   font-size: 0.8em;
   line-height: 1.5em;
 }
 code {
   border: 1px solid #ddd;
-  background: #eee;
+  background: #f5f5f5;
   padding: 0.1em;
 }
 pre code {

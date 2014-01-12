@@ -6,12 +6,13 @@ author: Chris Done
 tags: haskell, java, education
 ---
 
-In 2001, Dijkstra wrote a letter to the Budget Council of The
-University of Texas. A
+In 2001, Edsger W. Dijkstra wrote a letter to the Budget Council of
+The University of Texas. A
 [PDF is available here](http://www.cs.utexas.edu/users/EWD/OtherDocs/To%20the%20Budget%20Council%20concerning%20Haskell.pdf),
-I've typed it up so that everyone can read it. Relatedly, the
-algorithmic language Scheme was replaced by Python in MIT's The
-Structure and Interpretation of Computer Programs.
+I've typed it up so that everyone can read it. Sadly,
+[the curriculum was changed to Java](http://www.cs.utexas.edu/undergraduate-program/courses/312-introduction-programming). Relatedly,
+the algorithmic language Scheme was replaced by Python in MIT's The
+Structure and Interpretation of Computer Programs version [6.01](http://student.mit.edu/catalog/search.cgi?search=6.01).
 
 ## To the members of the Budget Council
 
