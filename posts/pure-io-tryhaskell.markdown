@@ -6,6 +6,9 @@ author: Chris Done
 tags: haskell
 ---
 
+**tl;dr: [Try Haskell](http://tryhaskell.org/) now has simple I/O built
+on a pure IO monad.**
+
 I wrote Try Haskell in 2010. I didn't really update the codebase
 since. It was rather poor, but had generally been stable enough. Last
 week I finally set some time aside to rewrite it from scratch (barring
@@ -33,7 +36,7 @@ and we know that pre-monad Haskell IO was modelled as
 a request/response system[^3] before it got updated in Haskell 1.3[^4]
 Fuelled by the nerdiness factor of this, and that it was the weekend,
 I rose to the challenge. I knew it wouldn't be hard, but it would be
-fun.
+fun with a real use-case (Try Haskell's REPL).
 
 My constraints were that it shouldn't be a continuation-based library,
 because I cannot have any state in Try Haskell. The server evaluates
@@ -73,13 +76,13 @@ Here is an interrupt:
 ```
 
 As a user of the library it is now my part of the dance to get some
-input from the user and then re-call the same function with more stdin
+input from the user and then re-call[^6] the same function with more stdin
 input:
 
 ``` haskell
 λ> runIO (Input ["Chris"] mempty) (putStrLn "Name:" >> getLine)
 (Right "Chris"
-,Output {outputStdout = ["Name:\n"], outputFiles = fromList []})
+,Output {outputStdout = ["Name:\n"],outputFiles = fromList []})
 ```
 
 I also implemented trivial exceptions:
@@ -87,7 +90,7 @@ I also implemented trivial exceptions:
 ``` haskell
 λ> runIO (Input ["Chris"] mempty) (throw (UserError "Woo!"))
 (Left (InterruptException (UserError "Woo!"))
-,Output {outputStdout = [], outputFiles = fromList []})
+,Output {outputStdout = [],outputFiles = fromList []})
 ```
 
 After that, it was only a matter of time before I implemented some
@@ -118,6 +121,10 @@ forever, but the server can be restarted inbetween. No state is stored
 on the server at all, it's all in the client. All the client has to do
 is pass it back and forth when it communicates with the server.
 
+I'd recommend Haskell intermediates (perhaps not newbies) to implement
+their own IO monad as a free monad, or as an mtl transformer, partly
+for the geeky fun of it, and partly for the insights.
+
 [^1]: Like “No instance for `(Show (a0 -> a0))` arising from a use of …”
       which is frankly a useless message to print in a REPL and it's
       strange that this is GHCi's default behaviour.
@@ -138,3 +145,6 @@ extensible basic design (an IO monad with error handling),” in
 
 [^5]: Russell O'Connor also talks about implementing IO as a free
 monad [here](http://r6.ca/blog/20110520T220201Z.html).
+
+[^6]: Yes, that means running the same computation every time from
+scratch, like a transaction.
