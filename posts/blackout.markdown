@@ -8,7 +8,7 @@ tags: reddit, twitter, google+, social netwgork
 
 Sometimes, you see something that makes you re-evaluate your
 habits. You realise your habits don't give you much entertainment,
-learnings or happiness. You think about other activiates that are
+learnings or happiness. You think about other activities that are
 better for your personal development, your perspective and your
 education. You think more about the things you would like to learn,
 the places you would like to travel to, performances and gatherings
