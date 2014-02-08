@@ -14,7 +14,7 @@ available in the GMail UI is desirable.
 
 So I moved my email reading to Emacs. Here's how I did it.
 
-# Offlimeimap
+# Offlineimap
 
 First, I installed offlineimap. Second, I made a `~/.offlineimaprc` configuration file:
 
