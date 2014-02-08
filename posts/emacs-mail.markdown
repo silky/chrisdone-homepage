@@ -1,5 +1,5 @@
 ---
-date: 2014-02-07
+date: 2014-02-08
 title: Emacs, Notmuch and Offlineimap
 description: Emacs, Notmuch and Offlineimap
 author: Chris Done
