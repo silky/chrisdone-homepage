@@ -164,3 +164,6 @@ margin-bottom:1em;
 .ace-sentence-and > .ace-sentence:after, .ace-sentence-or > .ace-sentence:after {
   content: ")";
 }
+.ace-adjective-coord {
+  color: #366354;
+}
