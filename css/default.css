@@ -152,19 +152,6 @@ margin-bottom:1em;
 .ace-transitive-v,.ace-intransitive-v,.ace-distransitive-v {
   color: #444444
 }
-.ace-sentence-and:before, .ace-sentence-or:before,
-.ace-sentence-and:after, .ace-sentence-or:after {
-  color: #aaa;
-  font-family: monospace;
-  font-size: 0.5em;
-}
-.ace-sentence-and:before, .ace-sentence-or:before {
-  content: "{";
-}
-.ace-sentence-and:after, .ace-sentence-or:after {
-  content: "}";
-}
-
 .ace-sentence-and > .ace-sentence:before, .ace-sentence-or > .ace-sentence:before,
 .ace-sentence-and > .ace-sentence:after, .ace-sentence-or > .ace-sentence:after {
   color: #555;
