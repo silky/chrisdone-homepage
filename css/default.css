@@ -140,11 +140,24 @@ margin-bottom:1em;
 .ace-if-if,.ace-if-then,.ace-relative-clause-that {
   color: #2e659c;
 }
-.ace-n_ {
+.ace-n_,.ace-proper-name {
   color: #8f684e;
 }
-.ace-np {
+.ace-np,.ace-unmarked-npcoord-and {
   color: #c3a043;
+}
+/* np */
+.ace-npcoord:before,
+.ace-npcoord:after {
+  color: #cfb56e;
+  font-family: monospace;
+  font-size: 0.5em;
+}
+.ace-npcoord:before {
+  content: "{";
+}
+.ace-npcoord:after {
+  content: "}";
 }
 .ace-relative-clause {
   color: #8f4e8b
@@ -164,6 +177,6 @@ margin-bottom:1em;
 .ace-sentence-and > .ace-sentence:after, .ace-sentence-or > .ace-sentence:after {
   content: ")";
 }
-.ace-adjective-coord {
+.ace-adjective-coord,.ace-adverb-coord {
   color: #366354;
 }
