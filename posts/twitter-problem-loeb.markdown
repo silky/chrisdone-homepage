@@ -86,7 +86,7 @@ water h =
 ```
 
 This is the second fastest algorithm in this page, clocking in at a mean
-3.511872 ms for a random list of 10000 elements. See
+2.624748 ms for a random list of 10000 elements. See
 [Benchmarks](#benchmarks) for more details.
 
 An efficient algorithm can be achieved with a trivial rewrite of
