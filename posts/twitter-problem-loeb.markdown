@@ -369,7 +369,7 @@ Russell O'Connor gave me some hints for reducing the lens
 verbiage. First, eta-reducing the locally defined lens `l` in my code
 removes the need for the `NoMonomorphismRestriction` extension, so
 I've removed that. Second, a rank-N type can also be used, but then
-the type signature is rather large and I'm unable to redouce it
+the type signature is rather large and I'm unable to reduce it
 presently without reading more of the lens library.
 
 ## Update on loeb
