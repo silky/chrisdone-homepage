@@ -56,8 +56,7 @@ expletive and vulgar, coming from the docks of Glasgow, after all, but
 in a good way. Very Scottish, too! He's also one to openly talk about
 how much he likes other comedians during his show, which is quite rare
 among top stand-up comedians, because he joyfuly celebrates all things
-funny. Despite all his ranting and dismay at hypocrisy he perceived in
-the world, in the the end his act always had a positive message. A
+funny. A
 YouTube sample of his funny-and-serious comedy can be found
 [here](https://www.youtube.com/watch?v=kj7PP1UZ7k8&t=2m39s),
 time-skipped to the start of an anecdote.
@@ -72,7 +71,9 @@ personal. Often his material was politically topical, and
 philosophical. I've cried laughing at some of his material, and looked
 on in awe at his sweating expressive rage with other material. It's
 hard to over-state the strength of his convictions in his stand-up and
-interviews. I've never seen another comedian like him. His whole shows
+interviews. Despite all his ranting and dismay at hypocrisy he
+perceived in the world, in the the end his act always had a positive
+message. I've never seen another comedian like him. His whole shows
 can be found on YouTube now. The best demonstration of his
 don't-know-wether-to-laugh-or-serious is
 [his bit on music of the time](https://www.youtube.com/watch?v=xRkA6zugNMQ).
