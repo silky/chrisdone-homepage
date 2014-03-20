@@ -72,7 +72,7 @@ philosophical. I've cried laughing at some of his material, and looked
 on in awe at his sweating expressive rage with other material. It's
 hard to over-state the strength of his convictions in his stand-up and
 interviews. Despite all his ranting and dismay at hypocrisy he
-perceived in the world, in the the end his act always had a positive
+perceived in the world, in the end his act always had a positive
 message. I've never seen another comedian like him. His whole shows
 can be found on YouTube now. The best demonstration of his
 don't-know-wether-to-laugh-or-serious is
