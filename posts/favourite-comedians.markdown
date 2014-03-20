@@ -14,11 +14,13 @@ appealing in different ways. In all cases, I come back to their sets
 fairly often. It's mostly a mix of American and British comedians.
 
 I'll be filling out the descriptions and adding more people as and
-when I get the time.
+when I get the time. One has to view their videos to get into each
+headspace individually, so it will take a while to finish writing this
+page.
 
 ## Armando Ianucci
 
-TBA.
+[YouTube clip](https://www.youtube.com/watch?v=ZQ12DDe4ag0). TBA.
 
 ## Bill Bailey
 
@@ -95,9 +97,9 @@ British in humour, if there is such a categorization. Many people
 "guest" stars on his show were unaware of being shown up with false
 charities and organizations and being made to say ridiculous things,
 without even questioning it. It's hard to describe without going into
-more paragraphs how stuningly good and unique Morris's work is. A
-sample of Brass Eye can be found on YouTube
-[here](https://www.youtube.com/watch?v=mPrCsfd1E64).
+more paragraphs how stuningly good and unique Morris's work is. Almost
+every scene has me shouting “brilliant!” A sample of Brass Eye can be
+found on YouTube [here](https://www.youtube.com/watch?v=mPrCsfd1E64).
 
 ## Eddie Izzard
 
