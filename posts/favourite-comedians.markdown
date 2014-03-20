@@ -18,6 +18,8 @@ when I get the time.
 
 ## Armando Ianucci
 
+TBA.
+
 ## Bill Bailey
 
 A English comedian, his self-described part-troll part-hippy
@@ -98,16 +100,57 @@ sample of Brass Eye can be found on YouTube
 [here](https://www.youtube.com/watch?v=mPrCsfd1E64).
 
 ## Eddie Izzard
+
+TBA.
+
 ## Eddie Murphy
+
+TBA.
+
 ## Karl Pilkington
+
+TBA.
+
 ## Louis CK
+
+TBA.
+
 ## Lee Evans
+
+TBA.
+
 ## Noel Fielding
+
+TBA.
+
 ## Patrice O'Neal
+
+TBA.
+
 ## Peter Kay
+
+TBA.
+
 ## Peter Cook
+
+TBA.
+
 ## Peter Sellars
+
+TBA.
+
 ## Ricky Gervais
+
+TBA.
+
 ## Steven Wright
+
+TBA.
+
 ## Stewart Lee
+
+TBA.
+
 ## Tim Vine
+
+TBA.
