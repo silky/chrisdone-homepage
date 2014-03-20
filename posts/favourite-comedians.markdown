@@ -20,8 +20,8 @@ when I get the time.
 
 ## Bill Bailey
 
-A British comedian, his self-described part-troll part-hippy appearance, gait and
-old-woodland-in-olde-England-tale-like jokes and
+A English comedian, his self-described part-troll part-hippy
+appearance, gait and old-woodland-in-olde-England-tale-like jokes and
 stream-of-consciousness and geeky absurdist ramblings combined with
 down to earth London speech has tickled me to the point of tears. His
 musical talent is also used fantastically well. I tend to groan when
@@ -46,7 +46,7 @@ found here [here](https://www.youtube.com/watch?v=AlvvCYUDHrQ).
 
 ## Billy Connolly
 
-Billy is a raspy-voiced British comedian who's made me cry laughing
+Billy is a raspy-voiced Scottish comedian who's made me cry laughing
 many times. He is an outstanding raconteur. He can tell anecdotes all
 day. Even the most mundane event when told by him has a funny streak
 to it. He started out telling jokes, but quickly his comedy became
@@ -79,7 +79,7 @@ don't-know-wether-to-laugh-or-serious is
 
 ## Chris Morris
 
-Chris Morris is a British satirist best known for his programme Brass
+Chris Morris is an English satirist best known for his programme Brass
 Eye in the 90's. It's frankly an oustanding and overlooked piece of
 work, and his other work, including many shorts that you can find on
 YouTube, are just wonderful. Everything he has done has been bitingly
