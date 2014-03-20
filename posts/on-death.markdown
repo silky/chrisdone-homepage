@@ -38,4 +38,5 @@ views on what it means to be alive and the role death plays in life.
 Is almost all ancient theology dealing with death by trying to justify
 it as if it has a good purpose, when really they had no choice other
 than to frame it so, because they lacked the technology to have it any
-other way?
+other way? Life and death is yin and yang, black and white, they
+say. You can't have one without the other. Poetic, but true?
