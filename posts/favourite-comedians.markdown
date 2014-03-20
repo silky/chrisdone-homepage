@@ -47,17 +47,17 @@ found here [here](https://www.youtube.com/watch?v=AlvvCYUDHrQ).
 ## Billy Connolly
 
 Billy is a raspy-voiced Scottish comedian who's made me cry laughing
-many times. He is an outstanding raconteur. He can tell anecdotes all
-day. Even the most mundane event when told by him has a funny streak
-to it. He started out telling jokes, but quickly his comedy became
-about his wacky views, his great stories and observations. His stories
-wind and go in and out of digressions like silly string. Very
-expletive and vulgar, coming from the docks of Glasgow, after all, but
-in a good way. Very Scottish, too! He's also one to openly talk about
-how much he likes other comedians during his show, which is quite rare
-among top stand-up comedians, because he joyfuly celebrates all things
-funny. A
-YouTube sample of his funny-and-serious comedy can be found
+many times. He is an outstanding raconteur. One of if not the best. He
+can tell anecdotes all day. Even the most mundane event when told by
+him has a funny streak to it. He started out telling jokes, but
+quickly his comedy became about his wacky views, his great stories and
+observations. His stories wind and go in and out of digressions like
+silly string. Very expletive and vulgar, coming from the docks of
+Glasgow, after all, but in a good way. Very Scottish, too! He's also
+one to openly talk about how much he likes other comedians during his
+show, which is quite rare among top stand-up comedians, because he
+joyfuly celebrates all things funny. A YouTube sample of his
+funny-and-serious comedy can be found
 [here](https://www.youtube.com/watch?v=kj7PP1UZ7k8&t=2m39s),
 time-skipped to the start of an anecdote.
 
