@@ -44,7 +44,7 @@ puts me in a good position to evaluate the above questions. Is it that
 we as a community are missing out on sweet tooling because we just
 don't have a convenient way to use it?
 
-[Here is a video](https://www.youtube.com/watch?v=ugWDkA6yReY)
+[Here is a video](https://www.youtube.com/watch?v=WAtEmoVN30E)
 demonstrating a trivial usage of it, i.e. the one that I've been
 testing with. I was too lazy to commentate it, but you can pause the
 video to see the display. I just set a breakpoint on `fib` and step
