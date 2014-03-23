@@ -21,9 +21,8 @@ he looked at it,
 and saw that it was good enough given the questionable requirements
 and strict time constraints.
 
-When I look at JavaScript,
-I see that it is shit. And not good enough given the various other
-superior languages out there.
+When I look at JavaScript, I see that it is bad. And not good enough
+given the various other superior languages out there.
 
 But I repeat myself, see [The JavaScript
 Problem](http://www.haskell.org/haskellwiki/The_JavaScript_Problem)
