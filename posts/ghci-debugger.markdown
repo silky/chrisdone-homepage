@@ -52,6 +52,11 @@ into the `main` function and keep stepping until evaluation is
 complete. At one point I go to the REPL to inspect the local binding
 `x` and then go back to stepping.
 
+In the display you can see the current expression being evaluated, and
+the values of the local bindings and their types below. I think
+there's room for in-place expansion of values, here. But I need to
+experiment with more interesting data structures.
+
 I invite overenthusiastic early adopters to try pulling from the
 haskell-mode repo to play around with it and patch up obvious
 deficiencies. You have to be using haskell-interactive-mode's REPL,
