@@ -62,7 +62,9 @@ haskell-mode repo to play around with it and patch up obvious
 deficiencies. You have to be using haskell-interactive-mode's REPL,
 `(require 'haskell-debug)` and then run `M-x haskell-debug` from a
 Haskell file or the REPL, like I do in the video. The rest should be
-fairly obvious from the buffer's helpful messages.
+fairly obvious from the buffer's helpful messages. But if it doesn't
+work as you expected because I don't know the first thing about how
+debuggers are supposed to be used, don't blame me. Just fix it.
 
 I'm completely ambivalent about whether a debugger is really useful,
 I've never really used one properly. So I'll try to use it to solve
