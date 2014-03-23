@@ -67,4 +67,4 @@ fairly obvious from the buffer's helpful messages.
 I'm completely ambivalent about whether a debugger is really useful,
 I've never really used one properly. So I'll try to use it to solve
 some problems—once I can find some decent use-cases—and report back
-in a few weeks.
+in a few weeks. For science!
