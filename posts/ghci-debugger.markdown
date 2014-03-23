@@ -46,8 +46,13 @@ don't have a convenient way to use it?
 
 [Here is a video](https://www.youtube.com/watch?v=ugWDkA6yReY)
 demonstrating a trivial usage of it, i.e. the one that I've been
-testing with. I invite overenthusiastic early adopters to try pulling
-from the haskell-mode repo to play around with it and patch up obvious
+testing with. I was too lazy to commentate it, but you can pause the
+video to see the display. I just set a breakpoint on `fib` and step
+into the `main` function and keep stepping until evaluation is
+complete.
+
+I invite overenthusiastic early adopters to try pulling from the
+haskell-mode repo to play around with it and patch up obvious
 deficiencies. You have to be using haskell-interactive-mode's REPL,
 `(require 'haskell-debug)` and then run `M-x haskell-debug` from a
 Haskell file or the REPL, like I do in the video. The rest should be
