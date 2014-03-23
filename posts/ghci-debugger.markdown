@@ -30,8 +30,11 @@ things manually. Who wants to bother doing that?
 
 So, I thought, as an experiment, I'd whip up a simple interface to
 GHCi's debugging facilities, based upon my (limited) understanding
-from the manual and the tutorials about it, to help me answer the
-following questions:
+from the manual and the tutorials about it.
+
+![http://i.imgur.com/eNOznTC.gif](http://i.imgur.com/eNOznTC.gif)
+
+This should help me answer the following questions:
 
 1. Is GHCi's debugger any good? I.e. it's useful, not quirky or obtuse.
 2. Is it practical? I.e. it works on real project code.
