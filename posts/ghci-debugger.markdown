@@ -29,10 +29,10 @@ support if I have to manually set breakpoints myself and step through
 things manually. Who wants to bother doing that? It's like running git
 commands manually instead of using magit.
 
-So, I thought, as an experiment, I'd whip up a simple interface to
-GHCi's debugging facilities, based upon my (limited) understanding
-from the manual and the tutorials about it, which should help me
-answer the following questions:
+So, I thought, as an experiment, I'd whip up a simple magit-like
+interface to GHCi's debugging facilities, based upon my (limited)
+understanding from the manual and the tutorials about it, which should
+help me answer the following questions:
 
 1. Is GHCi's debugger any good? I.e. it's useful, not quirky or obtuse.
 2. Is it practical? I.e. it works on real project code.
