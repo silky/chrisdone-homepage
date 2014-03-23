@@ -49,7 +49,8 @@ demonstrating a trivial usage of it, i.e. the one that I've been
 testing with. I was too lazy to commentate it, but you can pause the
 video to see the display. I just set a breakpoint on `fib` and step
 into the `main` function and keep stepping until evaluation is
-complete.
+complete. At one point I go to the REPL to inspect the local binding
+`x` and then go back to stepping.
 
 I invite overenthusiastic early adopters to try pulling from the
 haskell-mode repo to play around with it and patch up obvious
