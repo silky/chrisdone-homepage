@@ -27,7 +27,7 @@ some `error` or `trace` calls and re-run the whole program.
 It's also my experience that I don't care about GHCi's debugging
 support if I have to manually set breakpoints myself and step through
 things manually. Who wants to bother doing that? It's like running git
-commands manually instead of magit.
+commands manually instead of using magit.
 
 So, I thought, as an experiment, I'd whip up a simple interface to
 GHCi's debugging facilities, based upon my (limited) understanding
