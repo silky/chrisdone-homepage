@@ -32,7 +32,7 @@ So, I thought, as an experiment, I'd whip up a simple interface to
 GHCi's debugging facilities, based upon my (limited) understanding
 from the manual and the tutorials about it.
 
-![http://i.imgur.com/eNOznTC.gif](http://i.imgur.com/eNOznTC.gif)
+![](http://i.imgur.com/eNOznTC.gif)
 
 This should help me answer the following questions:
 
