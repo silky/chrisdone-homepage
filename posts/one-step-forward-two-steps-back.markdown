@@ -1,6 +1,6 @@
 ---
-date: 2013-03-30
-title: One step forward, two steps back, three steps forward
+date: 2014-03-30
+title: One step forward, two steps back
 description: One step forward, two steps back
 author: Chris Done
 tags: programming, haskell
