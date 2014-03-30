@@ -66,8 +66,8 @@ implore you to thoroughly explore all of the features above within the
 existing languages that do them well, and think about adding it to
 your language.
 
-As a follow-up post I might make a table of the top, say, 30, general
-purpose programming languages.
+As a follow-up post I might make a matrix of the top, say, 30, general
+purpose programming languages and all the features that they tick off.
 
 [^1]: Also known as quotation, quasiquotes, macros, templating,
       mixins, etc.
