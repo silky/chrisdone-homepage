@@ -56,6 +56,7 @@ existing language:
   compilation, JIT compilation, or third-party engines
 * An interpreter
 * [Tacit programming](http://en.wikipedia.org/wiki/Tacit_programming)
+* Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)
 
 The moral is, if you're inventing a new general purpose programming
 language and you have some clue that it's going to be adopted, I
