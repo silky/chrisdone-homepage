@@ -57,12 +57,13 @@ existing language:
 * An interpreter
 * [Tacit programming](http://en.wikipedia.org/wiki/Tacit_programming)
 * Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)[^3]
+* [Value polymorphism](http://chrisdone.com/posts/value-polymorphism)
 
 The moral is, if you're inventing a new general purpose programming
 language and you have some clue that it's going to be adopted, I
 implore you to thoroughly explore all of the features above within the
-existing languages that do them well, and make sure that your language
-has that thing.
+existing languages that do them well, and think about adding it to
+your language.
 
 As a follow-up post I might make a table of the top, say, 30, general
 purpose programming languages.
