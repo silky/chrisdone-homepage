@@ -37,6 +37,7 @@ existing language:
 * [Multiple dispatch](http://en.wikipedia.org/wiki/Multiple_dispatch)
 * [Inheritance](http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29)
 * [Garbage collection](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)
+* [A debugger](http://en.wikipedia.org/wiki/Debugger)
 * [Well-supported concurrency](http://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)
 * [Parallelism](http://en.wikipedia.org/wiki/Parallel_computing)
 * Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)[^3]
