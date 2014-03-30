@@ -6,8 +6,8 @@ author: Chris Done
 tags: programming, haskell
 ---
 
-The issue is that languages don't go forward, they move sideways or
-diagonally, or sometimes backwards.
+The issue is that programming languages don't go forward, they move
+sideways or diagonally, or sometimes backwards.
 
 A new car comes out, and it has some cool feature: Hey, it has road
 surface detection and changes the steering accordingly! But it should
