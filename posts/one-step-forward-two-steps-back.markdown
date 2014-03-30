@@ -38,7 +38,7 @@ existing language:
 * [Garbage collection](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)
 * [Well-supported concurrency](http://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)
 * [Parallelism](http://en.wikipedia.org/wiki/Parallel_computing)
-* [Dynamic code update](http://en.wikipedia.org/wiki/Hot_swapping)
+* [Dynamic code update](http://en.wikipedia.org/wiki/Hot_swapping)[^2]
 * [Image-based persistent](http://en.wikipedia.org/wiki/Smalltalk#Image-based_persistence)
 * Infinite-sized integers and rationals
 * [Exceptions](http://en.wikipedia.org/wiki/Exception_handling)
@@ -56,7 +56,7 @@ existing language:
   compilation, JIT compilation, or third-party engines
 * An interpreter
 * [Tacit programming](http://en.wikipedia.org/wiki/Tacit_programming)
-* Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)
+* Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)[^3]
 
 The moral is, if you're inventing a new general purpose programming
 language and you have some clue that it's going to be adopted, I
@@ -70,3 +70,5 @@ purpose programming languages.
 [^1]: Also known as quotation, quasiquotes, macros, templating,
       mixins, etc.
 [^2]: Also known as "hot-swapping", "live update", "plugins", etc.
+
+[^3]: Also known as implicit parameters, contexts, etc.
