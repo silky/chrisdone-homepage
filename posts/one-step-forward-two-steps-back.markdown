@@ -32,12 +32,14 @@ existing language:
 * [Overloaded literals](http://www.haskell.org/ghc/docs/7.0.4/html/users_guide/type-class-extensions.html#overloaded-strings)[^5]
 * [Fundamental immutability](http://en.wikipedia.org/wiki/Immutable_object)
 * [Purity](http://en.wikipedia.org/wiki/Purely_functional)
+* An interpreter
 * [Closures](http://en.wikipedia.org/wiki/Closure_%28computer_programming%29)
 * [Multiple dispatch](http://en.wikipedia.org/wiki/Multiple_dispatch)
 * [Inheritance](http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29)
 * [Garbage collection](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)
 * [Well-supported concurrency](http://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)
 * [Parallelism](http://en.wikipedia.org/wiki/Parallel_computing)
+* Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)[^3]
 * [Dynamic code update](http://en.wikipedia.org/wiki/Hot_swapping)[^2]
 * [Image-based persistent](http://en.wikipedia.org/wiki/Smalltalk#Image-based_persistence)
 * Infinite-sized integers and rationals
@@ -54,9 +56,7 @@ existing language:
 * [Distribution](http://en.wikipedia.org/wiki/Erlang_%28programming_language%29#Concurrency_and_distribution_orientation)
 * A compiler that compiles to machine code, either via static
   compilation, JIT compilation, or third-party engines
-* An interpreter
 * [Tacit programming](http://en.wikipedia.org/wiki/Tacit_programming)
-* Some form of (preferably static) [dynamic scope](http://en.wikipedia.org/wiki/Scope_%28computer_science%29#Dynamic_scoping)[^3]
 * [Value polymorphism](http://chrisdone.com/posts/value-polymorphism)
 
 The moral is, if you're inventing a new general purpose programming
