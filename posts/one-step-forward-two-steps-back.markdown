@@ -29,7 +29,7 @@ existing language:
 * [Type inference](http://en.wikipedia.org/wiki/Type_inference)
 * [Dependent types](http://en.wikipedia.org/wiki/Dependent_type)
 * [Parametrized modules](http://en.wikipedia.org/wiki/Standard_ML#Module_system)
-* [Overloaded literals](http://www.haskell.org/ghc/docs/7.0.4/html/users_guide/type-class-extensions.html#overloaded-strings)
+* [Overloaded literals](http://www.haskell.org/ghc/docs/7.0.4/html/users_guide/type-class-extensions.html#overloaded-strings)[^5]
 * [Fundamental immutability](http://en.wikipedia.org/wiki/Immutable_object)
 * [Purity](http://en.wikipedia.org/wiki/Purely_functional)
 * [Closures](http://en.wikipedia.org/wiki/Closure_%28computer_programming%29)
@@ -72,3 +72,5 @@ purpose programming languages.
 [^2]: Also known as "hot-swapping", "live update", "plugins", etc.
 
 [^3]: Also known as implicit parameters, contexts, etc.
+
+[^5]: So, numbers, strings, vectors, patterns, etc.
