@@ -11,7 +11,8 @@ Haskell in a cleverer way than lines.
 
 In an effort to reign in my incessant work on Haskell tooling[^1], I'm
 outlining a tool that I'd personally like and welcome people to
-implement it.
+implement it. Otherwise it serves as a motivating problem description
+for the next time I come around to it myself with free time.
 
 Before anyone emails me saying “lines/words are simple, other things
 are hard, that's why it's not been done yet. People undervalue the
