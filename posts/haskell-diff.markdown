@@ -315,4 +315,4 @@ them myself eventually, but I thought I'd put the suggestion out there
 first.
 
 [^1]: In favour of writing programs that concern themselves with
-      things other than Haskell. ;-)
+      things other than Haskell for once!
