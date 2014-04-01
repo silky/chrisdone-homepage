@@ -233,7 +233,7 @@ If you want to implement this, I would love to see any results.
 ## The typed diff
 
 Okay, you're still reading so you're pretty easily nerd sniped. Let's
-continue with the ideas. Another type off difference between two
+continue with the ideas. Another type of difference between two
 sources is the types of expressions in there. Consider:
 
 ``` haskell
