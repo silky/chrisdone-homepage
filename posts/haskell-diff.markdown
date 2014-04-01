@@ -304,7 +304,7 @@ ideas, from the familiar to the fairly novel. My general approach to
 tooling is progressive: start with the simplest working implementation
 then step up. Structured-haskell-mode is an example of this. It's no
 Lamdu, and it's no vanilla text-based mode. It's a stepping stone
-inbetween. The impedence to try SHM is lower.
+inbetween. The impedance to try SHM is lower.
 
 In the same way, maybe we can start with the abstract syntax diff, let
 people become acclimatized to it, let it stabilize, get it integrated
