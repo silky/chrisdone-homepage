@@ -43,6 +43,8 @@ upon Lupita Nyong'o's character. Slaves are so happy to be with their
 master in servitude, than the unknown hell that awaits them elsewhere
 in America.
 
+At one point I realised it kind of reminded me of The Pianist.
+
 There was one line in the movie that floored me, said by the wife of a
 slavemaster to a distraught and crying slave who'd been separated from
 her children, with the faintest air of pity,
