@@ -10,6 +10,17 @@ Thought I'd make a page of all the beers I've been trying. A
 beerlog. A bleeg! I'll update this specific page when I try new beers
 from now on.
 
+## Chimay Bleue
+
+[Link on ratebeer](http://www.ratebeer.com/beer/chimay-bleue-blue--grande-reserve/53/)
+
+This is a delicious beer! Chocolately texture, very rich tastes and
+pleasant aftertaste. High alcohol content but you don't notice it.
+
+* Enjoyed: ✓
+* Would drink again: ✓
+* Would recommend: ✓
+
 ## La Trappe Blond
 
 [Link on ratebeer](http://www.ratebeer.com/beer/la-trappe-blond/10380/)
