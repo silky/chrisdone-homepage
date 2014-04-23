@@ -382,7 +382,9 @@ Foo 5 'b'
 
 In other words, keep an index starting at 0. Increase it each
 iteration that `fromConstrM` does. When we're at index 0, return an
-`Int`, when we're at index 1, return a `Char`. Easy!
+`Int`, when we're at index 1, return a `Char`. Easy! Right?
+
+![](http://i.imgur.com/HfAq4.gif)
 
 ## Use-case 6: mapping over data structures generically
 
