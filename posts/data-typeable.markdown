@@ -84,7 +84,7 @@ instance [overlap ok] Typeable TypeRep
 
 ## Use-case 1: Print the type of something
 
-So we can use this function on a `Char` value, for example and GHCi
+So we can use this function on a `Char` value, for example, and GHCi
 can print it:
 
 ``` haskell
@@ -138,8 +138,8 @@ implement `char`:
 
 ``` haskell
 λ> let char x = case cast x of
-                 Just (x :: Char) -> show x
-                 Nothing -> "unknown"
+                  Just (x :: Char) -> show x
+                  Nothing -> "unknown"
 λ> char 'a'
 "'a'"
 λ> char 5
@@ -230,6 +230,8 @@ True
 False
 ```
 
+![](http://gifrific.com/wp-content/uploads/2012/08/algebraic.gif)
+
 ## Use-case 3: Get the constructor of a value
 
 We have the method
@@ -303,6 +305,8 @@ this function:
 fromConstrB :: forall a. Data a
             => (forall d. Data d => d) -> Constr -> a
 ```
+
+![](http://i.imgur.com/vs9AG.gif)
 
 Haskell beginners: Don't fear the rank-N type. What it's saying is
 merely that the `fromConstrB` function determines what the type of `d`
