@@ -230,7 +230,7 @@ True
 False
 ```
 
-![](http://gifrific.com/wp-content/uploads/2012/08/algebraic.gif)
+![](http://i.imgur.com/7ud0ezn.gif)
 
 ## Use-case 3: Get the constructor of a value
 
