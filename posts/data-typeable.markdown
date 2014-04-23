@@ -339,7 +339,7 @@ So we can just use that:
 Just 5
 ```
 
-Tada! But wait? What if there're _more_ fields. How do we provide more
+Tada! But wait… What if there're _more_ fields? How do we provide more
 than one, and of different types?
 
 Enter `fromConstrM`:
