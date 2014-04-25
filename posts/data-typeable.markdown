@@ -336,7 +336,7 @@ So we can just use that:
 ``` haskell
 λ> fromConstrB (fromConstr (toConstr (1 :: Int)))
                (toConstr (Just 1 :: Maybe Int)) :: Maybe Int
-Just 5
+Just 1
 ```
 
 Tada! But wait… What if there're _more_ fields? How do we provide more
