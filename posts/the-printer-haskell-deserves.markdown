@@ -8,6 +8,8 @@ tags: haskell
 
 Friday night project ahoy!
 
+## Problem
+
 I was working with haskell-names the other day. Its data types are
 nice enough, but are rather unweildly to read in the REPL when
 debugging and inspecting. This got me thinking about inspection and
@@ -30,6 +32,8 @@ peace-wise, taking care not to evaluate the whole structure too
 eagerly. I should be able to type `[1..]` into my REPL and not be
 spammed by numbers, but rather to expand it at my leisure.
 
+## Implementation
+
 My plan was to use the Data.Data API to traverse data structures
 breadth-first, display to the user something like `Just …` and then
 allow the user to continue evaluating on request by clicking the `…`
@@ -46,6 +50,8 @@ I've implemented a basic version of it in the
 la “presentations” in CLIM) and implemented a usable front-end for it
 in Emacs.
 
+## Result
+
 Yes! It
 works. [Here is a demonstration video.](http://youtu.be/4rcPfZveGZc)
 Concept proven. This is definitely my favourite way so far. I will
@@ -57,3 +63,49 @@ is already an improvement.
 I'll trial  it for a while, if I end up using
 it more often than not, I'll make the option to make :present implicit
 for all REPL evaluations.
+
+## Example
+
+For kicks, here's the output for
+
+``` haskell
+loeb (map (\i l -> Node i (map (fmap (+1)) l)) [1..3])
+```
+
+Normally you would get:
+
+``` haskell
+[Node {rootLabel = 1, subForest = [Node {rootLabel = 2, subForest =
+ [Node {rootLabel = 3, subForest = [Node {rootLabel = 4, subForest =
+  [Node {rootLabel = 5, subForest = [Node {rootLabel = 6, subForest =
+   [Node {rootLabel = 7, subForest = [Node {rootLabel = 8, subForest =
+```
+
+Ad infinitum! With presentation, you get:
+
+``` haskell
+λ> :present loeb (map (\i l -> Node i (map (fmap (+1)) l)) [1..3])
+Tree Integer:[Tree Integer]
+```
+
+If you click `Tree Integer` on the left, you get:
+
+``` haskell
+(Node 1 [Tree Integer]):[Tree Integer]
+```
+
+Click the new one on the left:
+
+``` haskell
+(Node 1 (Tree Integer:[Tree Integer])):[Tree Integer]
+```
+
+Et cetera:
+
+``` haskell
+(Node 1 ((Node 2 [Tree Integer]):[Tree Integer])):
+((Node 2 [Tree Integer]):[Tree Integer])
+```
+
+In other words, every `[Tree Integer]` is a placeholder that you can
+click to get more output.
