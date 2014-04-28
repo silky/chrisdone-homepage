@@ -15,7 +15,7 @@ nice enough, but are rather unweildly to read in the REPL when
 debugging and inspecting. This got me thinking about inspection and
 printers for Haskell data structures again.
 
-I've made several approaches for to haskell-mode.
+I've made several approaches for to haskell-mode in the past.
 
 * One which requires parsing the output of Show with Haskell and then
   printing that to s-expressions for Emacs to consume. This is generally
