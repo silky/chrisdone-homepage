@@ -28,7 +28,7 @@ I've made several approaches for to haskell-mode in the past.
 
 Today I implement yet another one, but this one I like best. I've
 always wanted to have a Haskell printer that can evaluate on demand,
-peace-wise, taking care not to evaluate the whole structure too
+piece-wise, taking care not to evaluate the whole structure too
 eagerly. I should be able to type `[1..]` into my REPL and not be
 spammed by numbers, but rather to expand it at my leisure.
 
