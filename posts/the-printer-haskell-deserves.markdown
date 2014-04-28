@@ -50,7 +50,7 @@ that needs more thinking about.
 I've implemented a basic version of it in the
 [present](http://hackage.haskell.org/package/present-0.0.0) package (a
 la “presentations” in
-[CLIM](http://bauhh.dyndns.org:8000/clim-spec/index.html)) and
+[CLIM](http://bauhh.dyndns.org:8000/clim-spec/23-1.html#_1125)) and
 implemented a usable front-end for it in Emacs.
 
 ## Result
