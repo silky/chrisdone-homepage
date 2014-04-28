@@ -34,10 +34,11 @@ spammed by numbers, but rather to expand it at my leisure.
 
 ## Implementation
 
-My plan was to use the Data.Data API to traverse data structures
-breadth-first, display to the user something like `Just …` and then
-allow the user to continue evaluating on request by clicking the `…`
-slot.
+My plan was to use the
+[Data.Data API](http://chrisdone/posts/data-typeable) to traverse data
+structures breadth-first, display to the user something like `Just …`
+and then allow the user to continue evaluating on request by clicking
+the `…` slot.
 
 I chatted with [Michael Sloan](https://github.com/mgsloan) about it
 and we came up with a simple experimental design and thought it would
