@@ -44,7 +44,8 @@ I chatted with [Michael Sloan](https://github.com/mgsloan) about it
 and we came up with a simple experimental design and thought it would
 be a nice idea. We hypothesized a nice class-based way to provide
 custom presenters for your types, so that e.g. a `Diagram` could be
-rendered as a bitmap inline with the rest of the data structure.
+rendered as a bitmap inline with the rest of the data structure, but
+that needs more thinking about.
 
 I've implemented a basic version of it in the
 [present](http://hackage.haskell.org/package/present-0.0.0) package (a
