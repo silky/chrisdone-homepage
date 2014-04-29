@@ -6,6 +6,11 @@ author: Chris Done
 tags: haskell
 ---
 
+**Update:** Got the link!
+  [The Trivial Monad](http://blog.sigfpe.com/2007/04/trivial-monad.html). Thanks,
+  John. Naturally, all interesting haskell things eventually lead back
+  to Dan Piponi.
+
 I heard about this from John Wiegley a while ago, but every time I
 recall it, I can't remember how it goes, so I thought I'd write it
 down for myself. I think there's a paper about it, but I can't find
