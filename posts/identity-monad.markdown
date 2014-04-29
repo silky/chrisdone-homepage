@@ -68,3 +68,6 @@ the value.
 
       To try to get around it. `unsafePerformIO` can get around it,
       but maybe you have control over whether people can import that.
+
+      And there's a difference between security against developer
+      attacks, and security against mistakes.
