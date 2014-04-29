@@ -8,7 +8,7 @@ tags: haskell
 
 **Update:** Got the link!
   [The Trivial Monad](http://blog.sigfpe.com/2007/04/trivial-monad.html). Thanks,
-  John. Naturally, all interesting haskell things eventually lead back
+  John. Naturally, all interesting Haskell things eventually lead back
   to Dan Piponi.
 
 I heard about this from John Wiegley a while ago, but every time I
