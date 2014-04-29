@@ -24,7 +24,7 @@ unpack.
 ``` haskell
 newtype Secret a = Secret { unSecret :: Identity a }
   deriving (Monad,Functor,Applicative)
-``
+```
 
 And I have some function exposing it like:
 
@@ -55,15 +55,11 @@ the value.
 [^1]: As always, bottom complicates it, so you should force it in the
       IO monad and catch any exceptions e.g.
 
-      ``` haskell
-      extract :: Secret a -> IO (Maybe a)
-      ```
+      `extract :: Secret a -> IO (Maybe a)`
 
       This prevents people from using
 
-      ``` haskell
-      (v >>= \a -> error ("The value is " ++ show a))`
-      ```
+      `(v >>= \a -> error ("The value is " ++ show a))`
 
       To try to get around it. `unsafePerformIO` can get around it,
       but maybe you have control over whether people can import that.
