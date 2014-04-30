@@ -66,8 +66,12 @@ the value.
 
       `(v >>= \a -> error ("The value is " ++ show a))`
 
-      To try to get around it. `unsafePerformIO` can get around it,
-      but maybe you have control over whether people can import that.
+      To try to get around it. `unsafePerformIO` can get around it.
 
-      And there's a difference between security against developer
-      attacks, and security against mistakes.
+      But if you're defending against developers, you probably have
+      control over the environment, so you can just disable some
+      imports and extensions and there's nothing they can do.
+
+      Really, though, this abstraction is for defending you against
+      yourself, as written in
+      [The Trivial Monad](http://blog.sigfpe.com/2007/04/trivial-monad.html).
