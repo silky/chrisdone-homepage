@@ -57,8 +57,12 @@ You've used the value, but it never escaped[^1] the actual Identity
 monad. It's like I'm giving you the value, but I'm also not giving you
 the value.
 
-[^1]: As always, bottom complicates it, so you should force it in the
-      IO monad and catch any exceptions e.g.
+[^1]: As always, there's a difference between “secure against your own
+      stupidity” and “secure against attackers.” For the former, this
+      is satisfied.
+
+      For the latter, bottom complicates it, so you
+      should force it in the IO monad and catch any exceptions e.g.
 
       `extract :: Secret a -> IO (Maybe a)`
 
@@ -71,7 +75,3 @@ the value.
       But if you're defending against developers, you probably have
       control over the environment, so you can just disable some
       imports and extensions and there's nothing they can do.
-
-      Really, though, this abstraction is for defending you against
-      yourself, as written in
-      [The Trivial Monad](http://blog.sigfpe.com/2007/04/trivial-monad.html).
