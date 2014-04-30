@@ -70,8 +70,9 @@ the value.
 
       `(v >>= \a -> error ("The value is " ++ show a))`
 
-      To try to get around it. `unsafePerformIO` can get around it.
+      To try to get around it.
 
-      But if you're defending against developers, you probably have
-      control over the environment, so you can just disable some
+      `unsafePerformIO` and other non-standard Haskell can get around
+      it, but if you're defending against developers, you probably
+      have control over the environment, so you can just disable some
       imports and extensions and there's nothing they can do.
