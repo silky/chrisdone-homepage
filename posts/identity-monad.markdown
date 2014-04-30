@@ -47,10 +47,12 @@ fmap (map T.toUpper) (getSecret foo)
 Or:
 
 ``` haskell
-do text <- getSecret foo
-   if all T.isUpper text
-      then return (T.reverse text)
-      else return text
+example :: Secret Text
+example =
+  do text <- getSecret foo
+     if all T.isUpper text
+        then return (T.reverse text)
+        else return text
 ```
 
 Note that the whole type of this expression is `Secret Text`. You
