@@ -53,6 +53,9 @@ do text <- getSecret foo
       else return text
 ```
 
+Note that the whole type of this expression is `Secret Text`. You
+still don't have the secret, you've got a computation over it.
+
 You've used the value, but it never escaped[^1] the actual Identity
 monad. It's like I'm giving you the value, but I'm also not giving you
 the value.
