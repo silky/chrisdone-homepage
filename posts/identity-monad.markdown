@@ -74,5 +74,6 @@ the value.
 
       `unsafePerformIO` and other non-standard Haskell can get around
       it, but if you're defending against developers, you probably
-      have control over the environment, so you can just disable some
-      imports and extensions and there's nothing they can do.
+      have control over the environment, so you can just white-list
+      the imports and extensions and there's nothing they can do. This
+      is what tryhaskell (via mueval) does.
