@@ -1,5 +1,5 @@
 ---
-date: 2014-04-13
+date: 2014-05-02
 title: Strict Haskell to JS?
 description: Strict Haskell to JS?
 author: Chris Done
