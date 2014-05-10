@@ -6,6 +6,8 @@ author: Chris Done
 tags: haskell, emacs
 ---
 
+*tl;dr: [The haskell-mode manual](https://github.com/haskell/haskell-mode/wiki)*
+
 ## Background
 
 So I've been using and adding to haskell-mode in Emacs for about 5-6
