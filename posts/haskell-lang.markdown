@@ -272,6 +272,10 @@ I won't be able to actively work on this for a few days, but I can do
 bits and bobs here and there on the weekend and I always have time to
 merge straight-forward changes.
 
+Questions/comments, feel free to email me:
+[chrisdone@gmail.com](mailto:chrisdone@gmail.com) Put a note in the
+email if you wish to be CC'd with other people in the discussion.
+
 [^2]: Having two navigations leads to
       [arbitrary choice.](http://en.wikipedia.org/wiki/The_Paradox_of_Choice)
 
