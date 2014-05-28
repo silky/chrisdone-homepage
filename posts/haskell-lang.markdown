@@ -220,6 +220,10 @@ Here is
 [the above wiki page](http://haskell-lang.org/wiki/Handling_errors_in_Haskell)
 with a cleaned up presentation.
 
+Note that MediaWiki is a bit stunted in the data it exposes for
+use. Some pages just aren't available, others produce invalid XML,
+etc. This is why the wiki is not exposed in the navigation.
+
 ## Going forward
 
 I still have to:
