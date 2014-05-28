@@ -162,7 +162,8 @@ questions. I've condensed them all in the user stories section.
 
 I've always liked the purple and green of the old Haskell logo. I
 don't know why gray/sky blue ended up being used for the new logo. So
-I decided I'd keep that purple theme and made some mockups.
+I decided I'd keep that purple theme and made some mockups. Purple is
+[a cool color](http://en.wikipedia.org/wiki/Purple#Vanity.2C_extravagance.2C_individualism).
 
 ## User stories
 
