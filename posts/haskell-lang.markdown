@@ -264,8 +264,9 @@ to produce:
   code works.
 * The features section needs to be filled out with content. I'm not
   entirely sure that the headers are decent, but I'm pretty sure
-  they're a good start. Pages for each of those which contain example
-  code of real problems that are solved are needed.
+  they're a good start.[^4] Pages for each
+  of those which contain example code of real problems that are solved
+  are needed.
 
 I won't be able to actively work on this for a few days, but I can do
 bits and bobs here and there on the weekend and I always have time to
@@ -277,3 +278,7 @@ merge straight-forward changes.
 [^3]: That means that you won't nitpick design decisions, bike shed
       about the theme, organization, choice of picture in the landing
       page, etc.
+
+[^4]: Maybe type-classes and monads might be of interest because both
+      where pioneered by Haskell and, at least in their native support,
+      are both peculiar to Haskell.
