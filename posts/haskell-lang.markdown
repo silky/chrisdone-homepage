@@ -21,6 +21,9 @@ impress people with Haskell and to guide them into using it.
   about priorities and a lack of user story or particular target
   audience. Who's this site targeting? Where are they supposed to go
   next? Is it answering the right questions?
+* Also, the uncoordinated effort of the wiki
+  [misleads people](http://stackoverflow.com/questions/23848648/text-html-vs-blaze-html)
+  and pages begin to bitrot. There are too many to vet.
 
 ## Why not fix haskell.org?
 
