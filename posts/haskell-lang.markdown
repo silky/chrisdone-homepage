@@ -154,6 +154,14 @@ haskell.org. They go to Hackage, or they google search and find wiki
 entries, or the GHC manual. A home page shouldn't cater to Haskellers,
 it should cater to would-be Haskellers.
 
+Naysayers for an attractive home page say things like “we don't want
+superficial people joining the community” (as if they could just learn
+Haskell on a whim!), but forget that people live insular lives. There
+are millions of people out there who've never heard of Haskell. If
+a random web user stumbles upon it and is taken by the look of it,
+what are they going to do with it? Share it. How did you first hear of
+Haskell? I was told about it by a friend.
+
 To decide on the kinds of things I want to see on a landing page when
 I first look at a language I'm unfamiliar with I ask a bunch of common
 questions. I've condensed them all in the user stories section.
