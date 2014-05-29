@@ -223,7 +223,7 @@ enough to satisfy my plan and to motivate for further work.
 
 Here's a quick comparison of the two sites now:
 
-To illustrate:
+To illustrate, here're the sites on various devices:
 
 * [haskell.org](http://ami.responsivedesign.is/?url=http%3A%2F%2Fhaskell.org)
 * [haskell-lang.org](http://ami.responsivedesign.is/?url=http%3A%2F%2Fhaskell-lang.org)
