@@ -16,7 +16,7 @@ haskell.org isn't doing a satisfactory job for me as a place to
 impress people with Haskell and to guide them into using it.
 
 * Its design is broken or just strangely put together and it's not
-  responsive.
+  responsive.[^1]
 * There are too many links on one page which indicates indecision
   about priorities and a lack of user story or particular target
   audience. Who's this site targeting? Where are they supposed to go
@@ -221,6 +221,13 @@ it doesn't yet fully flesh out all the things planned in the mockup.
 There are a few half-done pages in the navigation, fleshed out just
 enough to satisfy my plan and to motivate for further work.
 
+Here's a quick comparison of the two sites now:
+
+To illustrate:
+
+* [haskell.org](http://ami.responsivedesign.is/?url=http%3A%2F%2Fhaskell.org)
+* [haskell-lang.org](http://ami.responsivedesign.is/?url=http%3A%2F%2Fhaskell-lang.org)
+
 I've also made a little page to render wiki pages from
 haskell.org. There is a simple request sent to haskell.org for
 `/wiki/*` pages, it parses the Wiki syntax with pandoc and renders it
@@ -235,6 +242,9 @@ with a cleaned up presentation.
 Note that MediaWiki is a bit stunted in the data it exposes for
 use. Some pages just aren't available, others produce invalid XML,
 etc. This is why the wiki is not exposed in the navigation.
+
+I'm not sure about exposing the wiki directly, but rather some
+selected vetted pages, perhaps.
 
 ## Going forward
 
@@ -283,6 +293,10 @@ merge straight-forward changes.
 Questions/comments, feel free to email me:
 [chrisdone@gmail.com](mailto:chrisdone@gmail.com) Put a note in the
 email if you wish to be CC'd with other people in the discussion.
+
+[^1]: When I open haskell.org on my phone, I see the tablet-sized
+      layout with tiny text. The layout goes wonky on the
+      tablet version.
 
 [^2]: Having two navigations leads to
       [arbitrary choice.](http://en.wikipedia.org/wiki/The_Paradox_of_Choice)
