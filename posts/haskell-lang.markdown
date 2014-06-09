@@ -250,14 +250,14 @@ selected vetted pages, perhaps.
 
 I still have to:
 
-* Fill in the Try support
-* The features copy
+* ~~Fill in the Try support~~
+* ~~The features copy~~
 * Examples for each of said features
-* A list of video thumbnails to appear under the community banner (as
-  in the comp)
+* ~~A list of video thumbnails to appear under the community banner (as
+  in the comp)~~
 * Upcoming/past events
 * At least 5 examples for the header code
-* Add books & manuals to the Documentation tab
+* ~~Add books & manuals to the Documentation tab~~
 
 I'm happy with the look and feel and organization. Now is the matter
 of filling it with useful things. That'll take about a month, by
