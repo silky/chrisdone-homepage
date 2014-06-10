@@ -1,4 +1,5 @@
----
+-
+--
 date: 2014-04-22
 title: Typeable and Data in Haskell
 description: Typeable and Data in Haskell
@@ -451,7 +452,8 @@ Trivial example:
 A more useful example can be found in
 [structured-haskell-mode](https://github.com/chrisdone/structured-haskell-mode/blob/18c011978acfca30bac800d0ac0e9e31e653c440/src/Main.hs#L96)
 which walks over the Haskell syntax tree and collects source spans
-into a flat list.
+into a flat list. Another decent example is in
+[the present package](https://github.com/chrisdone/present/blob/master/src/Present.hs#L75-L112).
 
 ## Printer example
 
