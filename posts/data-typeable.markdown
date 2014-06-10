@@ -452,7 +452,10 @@ A more useful example can be found in
 [structured-haskell-mode](https://github.com/chrisdone/structured-haskell-mode/blob/18c011978acfca30bac800d0ac0e9e31e653c440/src/Main.hs#L96)
 which walks over the Haskell syntax tree and collects source spans
 into a flat list. Another decent example is in
-[the present package](https://github.com/chrisdone/present/blob/master/src/Present.hs#L75).
+[the present package](https://github.com/chrisdone/present/blob/master/src/Present.hs#L75). There's
+also an example in
+[Fay](https://github.com/faylang/fay/blob/master/src/Fay/Convert.hs#L54)
+to encode types to JSON with a specific Fay-runtime-specific encoding.
 
 ## Printer example
 
