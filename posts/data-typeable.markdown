@@ -1,5 +1,4 @@
--
---
+---
 date: 2014-04-22
 title: Typeable and Data in Haskell
 description: Typeable and Data in Haskell
