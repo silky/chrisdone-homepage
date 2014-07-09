@@ -270,7 +270,7 @@ depends on people approving of the project and my approach. So if
 you're reading this and you accept my design and organization[^3] and
 would like to contribute content (content pages are written in
 markdown), then pull requests to
-[the github repo](http://github.com/chrisdone/hl) would be most
+[the github repo](http://github.com/haskell-infra/hl) would be most
 handy. I will merge your changes and redeploy with relative speed.
 
 In particular, content in wanting which is not straight-forward for me
