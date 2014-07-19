@@ -29,7 +29,7 @@ important. I've used names for some philosophers I admire. There isn't
 The play starts out with an unknown person joining the channel and
 asking for help:
 
-> * **Hos**: Hey guys, quick question for you. I am working on
+> * **Huizi**: Hey guys, quick question for you. I am working on
 >   expanding my Haskell skills by doing some challenges at
 >   https://www.hackerrank.com, and I am having issues with one thing
 >   that I think has got to be much easier than I am making it.
