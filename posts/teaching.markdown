@@ -99,8 +99,8 @@ care and patience.
 >   here …
 
 Oddly, the spoilering continues. The learner has already stated that
-they're going through exercises. The channel persisting in trying to
-spoil the learning process and it does so clumsily. The
+they're going through exercises. The channel is persisting in trying
+to spoil the learning process and it does so clumsily. The
 meta-discussion continues:
 
 > * **Socrates**: Laozi, the part where you give a complete newbie
