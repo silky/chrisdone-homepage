@@ -9,7 +9,7 @@ tags: education
 Rather than write a bunch of pros about how I think teaching should be
 done, this time I'll simply comment an existing example. Needless to
 say, I am a proponent of
-[the socratic method](http://en.wikipedia.org/wiki/Socratic_method). As
+[the Socratic method](http://en.wikipedia.org/wiki/Socratic_method). As
 I begin more work in the area of education, I'll refer back to this
 page.
 
@@ -29,7 +29,7 @@ important. I've used names for some philosophers I admire. There isn't
 The play starts out with an unknown person joining the channel and
 asking for help:
 
-> * **Huizi**: Hey guys, quick question for you. I am working on
+> * **Hos**: Hey guys, quick question for you. I am working on
 >   expanding my Haskell skills by doing some challenges at
 >   https://www.hackerrank.com, and I am having issues with one thing
 >   that I think has got to be much easier than I am making it.
@@ -59,7 +59,7 @@ best approach to proceed? First, establish the person's experience.
 > * **Socrates**: Huizi, scratch that question about direct
 >   spoilers. The answer's been given verbatim.
 
-Sadly, the response is not helpful. It is unempathetic, it
+Sadly, the response is not helpful. It is unempathic, it
 presumptuous and muddled. Naturally, the learner is confused by
 this noise.
 
@@ -115,7 +115,7 @@ a topic:
 
 > * **Huizi**: But I can work with the language. Just anything with
 >   reading input or output just feels unnatural in the language.
-> * **Huizi**: But thats likely because it is unnatural for
+> * **Huizi**: But that's likely because it is unnatural for
 >   functional programming languages.
 > * **Confucius**: Huizi: Eh, it's not so bad, you just need to
 >   get used to it.
@@ -143,8 +143,8 @@ pure-functional-vs-state lecture begins:
 >   that it's a different approach than imperative languages, and
 >   that's the approach you already know.
 > * **Huizi**: No, its unnatural in the sense that functional
->   prgramming languages have this sense of no outside
->   state... reading from `STDIN` kind of "breaks" that whole ideaology.
+>   programming languages have this sense of no outside
+>   state... reading from `STDIN` kind of "breaks" that whole ideology.
 
 Meanwhile, an interaction with the learner is resumed:
 
@@ -200,7 +200,7 @@ discoveries:
 
 This is the first obvious clue to a misstep the newbie has made. Can
 you see their mistake? If not, you'll learn something, too. Now the
-task is to help them realise it. Meanwhile, a little bit more meta
+task is to help them realize it. Meanwhile, a little bit more meta
 discussion:
 
 > * **Socrates**: Confucius, does your approach of throwing stuff at
@@ -271,7 +271,7 @@ Then they try it out:
 
 Now they describe the problem they had with full understanding:
 
-> * **Huizi**: Ok, so I am splitting the list whereever it finds the sequence in that list.
+> * **Huizi**: Ok, so I am splitting the list wherever it finds the sequence in that list.
 > * **Socrates**: Yup.
 > * **Huizi**: `> splitOn [2,3] [1,2,3,4,5,6]`
 > * **Minerva**:  `[[1],[4,5,6]]`
