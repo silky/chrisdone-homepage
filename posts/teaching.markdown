@@ -6,7 +6,7 @@ author: Chris Done
 tags: education
 ---
 
-Rather than write a bunch of pros about how I think teaching should be
+Rather than write a bunch of prose about how I think teaching should be
 done, this time I'll simply comment an existing example. Needless to
 say, I am a proponent of
 [the Socratic method](http://en.wikipedia.org/wiki/Socratic_method). As
