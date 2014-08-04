@@ -60,6 +60,6 @@ Your own Way is your natural state of being. To be used and controlled
 by others is to pervert your natural state and confuse yourself. It
 takes careful self-observation to limit your use to others. In modern
 life, it is practically impossible to do so. You are the pig. You are
-the bull. But try to be the tree, as much as you can. Grow in your own
-way, like the tree. It's not growing for any purpose or use, **it's
+the bull. But try to be the tree, as much as you can. It grows large
+and magnificent. But it's not growing for any purpose or use, **it's
 just growing**.
