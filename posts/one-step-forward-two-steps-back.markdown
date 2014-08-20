@@ -60,11 +60,8 @@ existing language:
 * [Tacit programming](http://en.wikipedia.org/wiki/Tacit_programming)
 * [Value polymorphism](http://chrisdone.com/posts/value-polymorphism)
 
-The moral is, if you're inventing a new general purpose programming
-language and you have some clue that it's going to be adopted, I
-implore you to thoroughly explore all of the features above within the
-existing languages that do them well, and think about adding it to
-your language.
+The moral is, perhaps if you're making a new language, try building
+upon the past, rather than ignoring it and starting from scratch?
 
 As a follow-up post I might make a matrix of the top, say, 30, general
 purpose programming languages and all the features that they tick off.
