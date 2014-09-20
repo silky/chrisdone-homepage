@@ -40,7 +40,7 @@ to use that mechanism to make a general replacement for
 [`printf`](https://hackage.haskell.org/package/base-4.7.0.1/docs/Text-Printf.html).
 
 It's a continuation-based way of building up monoidal functions by
-composition with the ability to insert constants inbetween. Example:
+composition with the ability to insert constants in-between. Example:
 
 ``` haskell
 let holey = now "x = "
