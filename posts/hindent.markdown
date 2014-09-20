@@ -212,8 +212,8 @@ instance Pretty ClassDecl where
            pretty this
            write " = "
            pretty that
-```
       …
+```
 
 See how `pretty this` and `pretty that` are used for recursing instead
 of `prettyInternal`? This approach is used for
