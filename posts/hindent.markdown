@@ -55,7 +55,7 @@ The following points refer to style:
 * Prefer a space between a function and its argument, even if the
   argument is parenthesized.
 * Use line breaks carefully. Line breaks can increase readability, but
-  there is a tradeoff: Your editor may display only 40–50 lines at
+  there is a trade-off: Your editor may display only 40–50 lines at
   once. If you need to read and understand a large function all at
   once, you mustn't overuse line breaks.
 * When possible, align -- lines, = signs, and even parentheses and
@@ -65,7 +65,7 @@ Even the Haskell community is not immune to
 [long, protracted debates about tabs vs spaces.](http://www.reddit.com/r/haskell/comments/15gz8q/a_nondirty_shot_at_tabs_vs_spaces/)
 That reddit submission has zero points. That means it's very
 controversial. The submission also has 117 comments. That means people
-are very vocal about this topic. That's because bikeshedding is
+are very vocal about this topic. That's because bike-shedding is
 inversely proportional to the triviality of the debated thing. We
 know that.
 
@@ -275,7 +275,7 @@ demo =
         ,styleDefConfig = def}
 ```
 
-(The `prettyNoExt` is a publicy exposed version of the (private)
+(The `prettyNoExt` is a publicly exposed version of the (private)
 method `prettyInternal`.)
 
 Now let's test the `fundamental` style versus our `demo` style:
@@ -440,7 +440,7 @@ whether you have #ifdef CPP pragmas in your code, and things like
 that. That's just part of the general problem space of tools like
 this.
 
-## Remmaining ideas
+## Remaining ideas
 
 Currently you can only reformat a declaration. I don't yet trust (any)
 Haskell printer with my whole file. I invoke it on a per-declaration
