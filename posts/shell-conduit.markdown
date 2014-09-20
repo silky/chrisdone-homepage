@@ -29,6 +29,8 @@ bother with these dynamically typed messes? Go straight for Haskell.
 
 ## Like a glove
 
+![](http://24.media.tumblr.com/tumblr_m3037pY5x71qbkdr4o1_500.gif)
+
 I had an inkling a while back that conduits mirror the behaviour of
 bash pipes very well. I knew there was something to the idea, but
 didn't act on it fully for a while. Last week I experimented somewhat
