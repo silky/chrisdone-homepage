@@ -238,7 +238,7 @@ pretty a =
         makePrinter s (CatchAll f) = (f s a)
 ```
 
-In this method, we're grabbing our (mentioned earlier) list of
+In this function, we're grabbing our (mentioned earlier) list of
 `[Extender s]` values from `psExtenders` and then looking up to see if
 any of the types match. To clarify, here is the `Extender` type:
 
