@@ -369,6 +369,8 @@ Right. Shelly's fine. It just lacks the two killer things for me:
   Shelly.Lifted, Shelly.Pipe. Choice is good, but for a scripting
   language I personally prefer one goto way to do something.
 
+Also, Shelly cannot do live streams like Conduit can.
+
 ## Conduits as good scripting libraries
 
 You might want to import the regular Conduit modules qualified, too:
