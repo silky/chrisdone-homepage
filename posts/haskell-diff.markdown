@@ -121,7 +121,7 @@ in `+{…}`, a la classic diffs:
 ``` haskell
 ¹{main = +{do args <- getArgs
               case args of
-                [] -> ²{do putStrLn +{"Write your name!"}
+                [] -> ²{do putStrLn +{"Hello!"}
                            name <- getLine
                            print name}
                 _ -> runWithArgs args}}
