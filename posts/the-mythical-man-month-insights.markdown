@@ -179,7 +179,6 @@ Below; functional programming springs to mind:
   programs to new functions without creating side effects. From
   complexity of structure comes the unvisualized states that constitute
   security trapdoors.”
-
 * “The physicist labors on, however, in a firm faith that there are
   unifying principles to be found […] because God is not capricious or
   arbitrary. No such faith comforts the software engineer.”
