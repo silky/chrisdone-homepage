@@ -17,7 +17,7 @@ I thought this quote was tres amusant:
 
 In my reading of the book, around chapter 11, “Plan to Throw One Away”,
 I got the idea to annotate and underline sentences and paragraphs that
-ringed true with my experience or that I thought were insights that I
+rang true with my experience or that I thought were insights that I
 and everyone should take into account.
 
 Now that I've finished it, I thought I'd jot those points, that I felt
