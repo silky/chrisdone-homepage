@@ -50,7 +50,7 @@ data”), PostgreSQL handles it beautifully. But the speed of
 `OFFSET`/`LIMIT` is not great:
 
     ircbrowse=> explain analyze select * from event where channel = 1
-                                order by id offset 1000 limit 30;
+                                order by id offset 500000 limit 30;
     QUERY PLAN
     Limit  (cost=5648.81..5818.28 rows=30 width=85)
            (actual time=0.301..0.309 rows=30 loops=1)
@@ -58,19 +58,26 @@ data”), PostgreSQL handles it beautifully. But the speed of
        (cost=0.00..81914674.39 rows=14501220 width=85)
        (actual time=0.020..0.288 rows=1030 loops=1)
              Filter: (channel = 1)
-     Total runtime: 0.325 ms
 
 I think that this index scan is simply too expensive. Notice that I'm ordering by id which has a unique btree index on it. Check out the speed:
 
     ircbrowse=> select * from event where channel = 1
-                order by id offset 1000 limit 30;
+                order by id offset 500000 limit 30;
     Time: 0.721 ms
     ircbrowse=> select * from event where channel = 1
-                order by id offset 1030 limit 30;
-    Time: 0.691 ms
+                order by id offset 500000 limit 30;
+    Time: 191.926 ms
 
-You might think less than a second to sift through 1000 rows of a 28million row table is pretty
-good, but I think it sucks.
+You might think less than a second to sift through 500,000 rows of a
+28million row table is pretty good, but I think it sucks. It's also
+deceptive. Let's increase it to 1,000,000 rows (of 19,000,00):
+
+    ircbrowse=> select * from event where channel = 1
+                order by id offset 1000000 limit 30;
+    Time: 35022.464 ms
+
+This is getting worse and worse! It's probably linear in its poor
+performance.
 
 However, there's a solution. Use an index table. A separate table
 which contains foreign keys pointing to this table:
@@ -104,12 +111,12 @@ Now you can make a very efficient query for the same data as above:
     ircbrowse=> e.type,e.nick,e.text FROM event e,
     ircbrowse-> event_order_index idx
     ircbrowse-> WHERE e.id = idx.origin and idx.idx = 1000 and
-    ircbrowse=> idx.id > 1000 and idx.id < 1030
+    ircbrowse=> idx.id > 1000000 and idx.id < 1000030
     ircbrowse-> ORDER BY e.id asc
     ircbrowse-> LIMIT 30;
-    Time: 1.217 ms
+    Time: 1.001 ms
 
-**That's 600x times faster!**
+This is more or less constant time.
 
 And you can see this in action on the site. Takes about 30ms to load
 and render the page if I run this on the server:
