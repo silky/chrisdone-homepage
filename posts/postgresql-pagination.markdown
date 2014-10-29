@@ -3,7 +3,7 @@ date: 2014-10-28
 title: Fast pagination on PostgreSQL
 description: Fast pagination on PostgreSQL
 author: Chris Done
-tags: haskell, postgresql
+tags: postgresql
 ---
 
 During the implementation of [IRCBrowse](http://ircbrowse.net/) I
