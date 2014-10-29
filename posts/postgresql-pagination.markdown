@@ -62,7 +62,7 @@ data”), PostgreSQL handles it beautifully. But the speed of
 I think that this index scan is simply too expensive. Notice that I'm ordering by id which has a unique btree index on it. Check out the speed:
 
     ircbrowse=> select * from event where channel = 1
-                order by id offset 500000 limit 30;
+                order by id offset 1000 limit 30;
     Time: 0.721 ms
     ircbrowse=> select * from event where channel = 1
                 order by id offset 500000 limit 30;
