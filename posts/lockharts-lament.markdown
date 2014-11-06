@@ -146,8 +146,8 @@ in schools since primary school. As in the paper:
 > and you virtually guarantee that the education establishment will suck
 > the life out of it.  School boards do not understand what math is,
 > neither do educators, textbook authors, publishing companies, and
-> sadly, neither do most ofthe problem is so enormous, I hardly know
-> where to begin.
+> sadly, neither do most of our math teachers. The problem is so
+> enormous, I hardly know where to begin.
 
 ## Conclusion
 
