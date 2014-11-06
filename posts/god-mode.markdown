@@ -26,7 +26,7 @@ that section below.](#the-keymapping)
 ## Compared with Vim
 
 Coming back to the examples I came up with in [speculations on
-exclusive editing]((/posts/speculations-on-exclusive-editing)), God-mode
+exclusive editing](/posts/speculations-on-exclusive-editing), God-mode
 is on par with Vim. In fact, it's the same or fewer key presses for each one:
 
     Vim:   bbDi (5)

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Layout/theme */
 sup + sup {
-margin-left: 0.25em;
+  margin-left: 0.25em;
 }
 body {
   background: #efefef;
@@ -9,6 +9,9 @@ body {
   text-shadow: 1px 1px 1px #ffffff;
   font-size: 20px;
   font-family: merriweather,georgia, serif;
+}
+del {
+  color: #888
 }
 h1 {
   margin-top: 0.5em;
@@ -54,10 +57,13 @@ pre code {
 }
 blockquote {
   border: 1px solid #ddd;
-  background: #eee;
+  background: #f5f5f5;
   padding: 0 1em;
   margin: 0;
   border-radius: 0.2em;
+}
+blockquote code {
+  background: #fff;
 }
 footer {
   margin-top: 0.5em;
@@ -100,8 +106,8 @@ pre.sourceCode span.dt { color: #4F4371; }
 hr { height:0;background:inherit;border:0;border-top: 1px solid #ccc; }
 .footnotes {
 
-margin-top:1em;
-margin-bottom:1em;
+  margin-top:1em;
+  margin-bottom:1em;
 }
 
 
